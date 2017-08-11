@@ -1,0 +1,23 @@
+{
+  "name": "meta-website",
+  "version": "1.0.0",
+  "description": "project for website meta",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/a42phantom/meta.git"
+  },
+  "author": "a42phantom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a42phantom/meta/issues"
+  },
+  "homepage": "https://github.com/a42phantom/meta#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "pug": "^2.0.0-rc.3"
+  }
+}
