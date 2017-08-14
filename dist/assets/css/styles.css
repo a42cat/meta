@@ -1,10 +1,10 @@
 .button {
-  border-radius: 50%;
-  -o-border-image: linear-gradient(to right, black, transparent) 1 100%;
-  border-image: -webkit-gradient(linear, left top, right top, from(black), to(transparent)) 1 100%;
-  border-image: linear-gradient(to right, black, transparent) 1 100%;
-  border-width: 2px;
-  border-style: solid; }
+  border-radius: 50px;
+  /* border-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)) 1 100%;
+	border-width: 2px;
+	border-style: solid; */
+  -webkit-box-shadow: inset 0 2px 0 #47a4bc, inset 2px 0 0 #22e4c4, inset 0 -2px 0 #47a4bc, inset -2px 0 0 #725cb3;
+  box-shadow: inset 0 2px 0 #47a4bc, inset 2px 0 0 #22e4c4, inset 0 -2px 0 #47a4bc, inset -2px 0 0 #725cb3; }
 
 header {
   padding-top: 25px;
@@ -35,16 +35,34 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.button {
-      display: block;
-      width: 45px;
-      height: 45px;
-      background-size: 25px;
-      background-repeat: no-repeat;
-      background-position: center center; }
-    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerPhoneButton {
-      background-image: url(../images/phoneIco.png); }
-    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerTelegramButton {
-      background-image: url(../images/telegramIco.png); }
-    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerDropdownMenuButton {
-      background-image: url(../images/menuIco.png); }
+    header .headerSubMenu .headerSubMenuItem {
+      margin-right: 15px; }
+      header .headerSubMenu .headerSubMenuItem:nth-last-child(1) {
+        margin-right: 0; }
+      header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.button {
+        display: block;
+        width: 45px;
+        height: 45px;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center center; }
+      header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerPhoneButton {
+        background-image: url(../images/phoneIco.png); }
+      header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerTelegramButton {
+        background-image: url(../images/telegramIco.png);
+        background-position: 8px 12px; }
+      header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerDropdownMenuButton {
+        background-image: url(../images/menuIco.png); }
+  header .headerContactBlock p {
+    color: #7459b3;
+    margin-bottom: 0;
+    line-height: 22px; }
+    header .headerContactBlock p.phone {
+      font-weight: 700;
+      font-size: 16px; }
+      header .headerContactBlock p.phone span {
+        font-weight: bold;
+        font-size: 26px; }
+    header .headerContactBlock p.address {
+      font-weight: 500;
+      font-size: 16px; }

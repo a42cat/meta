@@ -3,9 +3,9 @@ mixin header()
 		.row
 			.container
 				.row.align-items-center
-					.col
-						img(src="assets/images/logoColor.png")
-					.col-lg-5
+					.col-4.col-xl-2.col-lg-2.col-md-2
+						img.img-fluid(src="assets/images/logoColor.png")
+					.col-xl-4.col-lg-5.col-md-8.d-none.d-md-flex
 						ul.headerTopMenu
 							li.headerTopMenuItem
 								a.headerTopMenuItemLink О компании
@@ -15,12 +15,15 @@ mixin header()
 								a.headerTopMenuItemLink Новости
 							li.headerTopMenuItem
 								a.headerTopMenuItemLink Контакты
-					.col-lg-2
-						ul.headerSubMenu
+					.col-8.col-xl-2.col-lg-auto.col-md-2
+						ul.headerSubMenu.d-flex.justify-content-sm-end.justify-content-md-start.justify-content-end
+							li.headerSubMenuItem.d-md-none.d-xl-none.d-lg-none
+								a.headerSubMenuItemLink.button.headerDropdownMenuButton
 							li.headerSubMenuItem
 								a.headerSubMenuItemLink.button.headerPhoneButton
 							li.headerSubMenuItem
 								a.headerSubMenuItemLink.button.headerTelegramButton
-							li.headerSubMenuItem.d-xl-none.d-lg-none
-								a.headerSubMenuItemLink.button.headerDropdownMenuButton
-					.col-lg-3
+					.col-xl-3.col-lg-auto.d-none.d-lg-flex.flex-column.headerContactBlock.text-right
+						p.phone +7 (812)
+							span  685-58-50
+						p.address ул. Большая Посадская, д. 16
