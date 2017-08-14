@@ -1,0 +1,26 @@
+mixin header()
+	header.container-fluid
+		.row
+			.container
+				.row.align-items-center
+					.col
+						img(src="assets/images/logoColor.png")
+					.col-lg-5
+						ul.headerTopMenu
+							li.headerTopMenuItem
+								a.headerTopMenuItemLink О компании
+							li.headerTopMenuItem
+								a.headerTopMenuItemLink Цены
+							li.headerTopMenuItem
+								a.headerTopMenuItemLink Новости
+							li.headerTopMenuItem
+								a.headerTopMenuItemLink Контакты
+					.col-lg-2
+						ul.headerSubMenu
+							li.headerSubMenuItem
+								a.headerSubMenuItemLink.button.headerPhoneButton
+							li.headerSubMenuItem
+								a.headerSubMenuItemLink.button.headerTelegramButton
+							li.headerSubMenuItem.d-xl-none.d-lg-none
+								a.headerSubMenuItemLink.button.headerDropdownMenuButton
+					.col-lg-3

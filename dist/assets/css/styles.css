@@ -1,0 +1,50 @@
+.button {
+  border-radius: 50%;
+  -o-border-image: linear-gradient(to right, black, transparent) 1 100%;
+  border-image: -webkit-gradient(linear, left top, right top, from(black), to(transparent)) 1 100%;
+  border-image: linear-gradient(to right, black, transparent) 1 100%;
+  border-width: 2px;
+  border-style: solid; }
+
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-image: url(../images/headerBG.png);
+  min-height: 500px;
+  background-size: cover;
+  background-position: center top; }
+  header .headerTopMenu {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    header .headerTopMenu .headerTopMenuItem .headerTopMenuItemLink {
+      color: #987dd6;
+      font-weight: bold; }
+      header .headerTopMenu .headerTopMenuItem .headerTopMenuItemLink:hover {
+        color: #000; }
+  header .headerSubMenu {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.button {
+      display: block;
+      width: 45px;
+      height: 45px;
+      background-size: 25px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerPhoneButton {
+      background-image: url(../images/phoneIco.png); }
+    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerTelegramButton {
+      background-image: url(../images/telegramIco.png); }
+    header .headerSubMenu .headerSubMenuItem .headerSubMenuItemLink.headerDropdownMenuButton {
+      background-image: url(../images/menuIco.png); }

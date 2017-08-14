@@ -1,0 +1,58 @@
+.button {
+	border-radius: 50%;
+	border-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)) 1 100%;
+	border-width: 2px;
+	border-style: solid;
+}
+header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-image: url(../images/headerBG.png);
+	min-height: 500px;
+	background-size: cover;
+	background-position: center top;
+	.headerTopMenu {
+		width:100%;
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+		display: flex;
+		justify-content: space-around;
+		.headerTopMenuItem {
+			.headerTopMenuItemLink {
+				&:hover {
+					color:#000;
+				}
+				color:#987dd6;
+				font-weight: bold;
+			}
+		}
+	}
+	.headerSubMenu {
+		margin-bottom: 0;
+		list-style:none;
+		padding-left: 0;
+		display: flex;
+		.headerSubMenuItem {
+			.headerSubMenuItemLink {
+				&.button {
+					display: block;
+					width: 45px;
+					height: 45px;
+					background-size: 25px;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				&.headerPhoneButton {
+					background-image:url(../images/phoneIco.png);
+				}
+				&.headerTelegramButton {
+					background-image:url(../images/telegramIco.png);
+				}
+				&.headerDropdownMenuButton {
+					background-image:url(../images/menuIco.png);
+				}
+			}
+		}
+	}
+}
