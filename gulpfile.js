@@ -10,21 +10,26 @@ var rename = require("gulp-rename");
 var cssnano = require("gulp-cssnano");
 var autoprefixer = require('gulp-autoprefixer');
 var pug = require('gulp-pug');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task("sass", function() {
   return gulp.src("src/scss/**/*.scss")
+  .pipe(sourcemaps.init())
   .pipe(autoprefixer({
       browsers: ['last 2 versions']
   }))
   .pipe(sass())
   /*.pipe(cssnano())
   .pipe(rename({ suffix: '.min' }))*/
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest("dist/assets/css/"));
 });
 
 gulp.task("scripts", function() {
   return gulp.src("src/js/*.js")
+  .pipe(sourcemaps.init())
   /*.pipe(uglify())*/
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest("dist/assets/js/"));
 });
 

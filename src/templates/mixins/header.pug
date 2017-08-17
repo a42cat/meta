@@ -1,11 +1,11 @@
 mixin header()
 	header.container-fluid
 		.row
-			.container
+			.container.headerTopMenuWrap
 				.row.align-items-center
-					.col-4.col-xl-2.col-lg-2.col-md-2
+					.col-4.col-xl-2.col-lg-2.col-md-2.logo
 						img.img-fluid(src="assets/images/logoColor.png")
-					.col-xl-4.col-lg-5.col-md-8.d-none.d-md-flex
+					.col-xl-5.col-lg-5.col-md-8.d-none.d-md-flex
 						ul.headerTopMenu
 							li.headerTopMenuItem
 								a.headerTopMenuItemLink О компании
@@ -18,7 +18,7 @@ mixin header()
 					.col-8.col-xl-2.col-lg-auto.col-md-2
 						ul.headerSubMenu.d-flex.justify-content-sm-end.justify-content-md-start.justify-content-end
 							li.headerSubMenuItem.d-md-none.d-xl-none.d-lg-none
-								a.headerSubMenuItemLink.button.headerDropdownMenuButton
+								a.headerSubMenuItemLink.button.headerDropdownMenuButton#headerDropdownMenuButton
 							li.headerSubMenuItem
 								a.headerSubMenuItemLink.button.headerPhoneButton
 							li.headerSubMenuItem
@@ -27,3 +27,152 @@ mixin header()
 						p.phone +7 (812)
 							span  685-58-50
 						p.address ул. Большая Посадская, д. 16
+			.container-fluid.headerFixedLine.d-none.d-md-block
+				.row
+					.container
+						.row.align-items-center
+							.d-none.logo
+								img.img-fluid(src="assets/images/logoWhite.png")
+							.d-none
+								ul.headerFixedMenuLeft
+									li.headerFixedMenuLeftItem
+										a.headerFixedMenuLeftItemLink О компании
+									li.headerFixedMenuLeftItem
+										a.headerFixedMenuLeftItemLink Новости
+									li.headerFixedMenuLeftItem
+										a.headerFixedMenuLeftItemLink Цена
+									li.headerFixedMenuLeftItem
+										a.headerFixedMenuLeftItemLink Контакты
+							.col-12
+								ul.headerFixedMenuRight.justify-content-between
+									li.headerFixedMenuRightItem
+										a.headerFixedMenuRightItemLink Бухгалтерские услуги
+										ul.dropDownMenu
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink Бухгалтерское сопровождение фирм
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink Восстановление учета
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink Передача отчетности
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink Сверка с МИФНС, ПФ и ФСС
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink нулевая отчетность
+									li.headerFixedMenuRightItem
+										a.headerFixedMenuRightItemLink налоговое консультирование
+										ul.dropDownMenu
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink Декларация 3-НДФЛ
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink Камеральные проверки
+											li.dropDownMenuSectionsListItem
+												a.dropDownMenuSectionsListItemLink Выездная налоговоя проверка
+									li.headerFixedMenuRightItem
+										a.headerFixedMenuRightItemLink дополнительные услуги
+										ul.dropDownMenu
+											li.dropDownMenuSections
+												a.dropDownMenuSectionsLink Юридические услуги
+												ul.dropDownMenuSectionsList
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Регистрация юридических лиц
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Открытие р/с
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Выписка из ЕГРЮЛ
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Внесение изменений в ЕГРЮЛ
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Регистрация филиалов
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Реорганизация предприятий
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Ликвидация юр. лица
+											li.dropDownMenuSections
+												a.dropDownMenuSectionsLink Онлайн услуги
+												ul.dropDownMenuSectionsList
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Форма заказа для подготовки сдачи нулевой	отчетности
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Форма для регистрации ООО/ИП
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Калькулятор услуг
+											li.dropDownMenuSections
+												ul.dropDownMenuSectionsList
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Для начинающих предпринимателей
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Кадровое делопроизводство
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Почтово-секретарское обслуживание
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Курьерские услуги
+							.d-none
+								ul.headerFixedSubMenu.justify-content-end
+									li.headerFixedSubMenuItem
+										a.buttonWhite.headerFixedSubMenuItemLink.headerFixedPhoneButton
+									li.headerFixedSubMenuItem
+										a.buttonWhite.headerFixedSubMenuItemLink.headerFixedTelegramButton
+									li.headerFixedSubMenuItem.d-xl-none
+										a.buttonWhite.headerFixedSubMenuItemLink.headerFixedDropdownMenuButton#headerFixedDropdownMenuButton
+										ul.dropDownMenu
+											li.dropDownMenuSectionsMain
+												a.dropDownMenuSectionsMainLink бухгалтерские услуги
+												ul.dropDownMenu
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Бухгалтерское сопровождение фирм
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Восстановление учета
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Передача отчетности
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Сверка с МИФНС, ПФ и ФСС
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink нулевая отчетность
+											li.dropDownMenuSectionsMain
+												a.dropDownMenuSectionsMainLink налоговое консультирование
+												ul.dropDownMenu
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Декларация 3-НДФЛ
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Камеральные проверки
+													li.dropDownMenuSectionsListItem
+														a.dropDownMenuSectionsListItemLink Выездная налоговоя проверка
+											li.dropDownMenuSectionsMain
+												a.dropDownMenuSectionsMainLink дополнительные услуги
+												ul.dropDownMenu
+													li.dropDownMenuSections
+														a.dropDownMenuSectionsLink Юридические услуги
+														ul.dropDownMenuSectionsList
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Регистрация юридических лиц
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Открытие р/с
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Выписка из ЕГРЮЛ
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Внесение изменений в ЕГРЮЛ
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Регистрация филиалов
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Реорганизация предприятий
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Ликвидация юр. лица
+													li.dropDownMenuSections
+														a.dropDownMenuSectionsLink Онлайн услуги
+														ul.dropDownMenuSectionsList
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Форма заказа для подготовки сдачи нулевой	отчетности
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Форма для регистрации ООО/ИП
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Калькулятор услуг
+													li.dropDownMenuSections
+														ul.dropDownMenuSectionsList
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Для начинающих предпринимателей
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Кадровое делопроизводство
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Почтово-секретарское обслуживание
+															li.dropDownMenuSectionsListItem
+																a.dropDownMenuSectionsListItemLink Курьерские услуги

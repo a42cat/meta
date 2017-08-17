@@ -22,10 +22,10 @@
   <body>
     <header class="container-fluid">
       <div class="row">
-        <div class="container">
+        <div class="container headerTopMenuWrap">
           <div class="row align-items-center">
-            <div class="col-4 col-xl-2 col-lg-2 col-md-2"><img class="img-fluid" src="assets/images/logoColor.png"/></div>
-            <div class="col-xl-4 col-lg-5 col-md-8 d-none d-md-flex">
+            <div class="col-4 col-xl-2 col-lg-2 col-md-2 logo"><img class="img-fluid" src="assets/images/logoColor.png"/></div>
+            <div class="col-xl-5 col-lg-5 col-md-8 d-none d-md-flex">
               <ul class="headerTopMenu">
                 <li class="headerTopMenuItem"><a class="headerTopMenuItemLink">О компании</a></li>
                 <li class="headerTopMenuItem"><a class="headerTopMenuItemLink">Цены</a></li>
@@ -35,7 +35,7 @@
             </div>
             <div class="col-8 col-xl-2 col-lg-auto col-md-2">
               <ul class="headerSubMenu d-flex justify-content-sm-end justify-content-md-start justify-content-end">
-                <li class="headerSubMenuItem d-md-none d-xl-none d-lg-none"><a class="headerSubMenuItemLink button headerDropdownMenuButton"></a></li>
+                <li class="headerSubMenuItem d-md-none d-xl-none d-lg-none"><a class="headerSubMenuItemLink button headerDropdownMenuButton" id="headerDropdownMenuButton"></a></li>
                 <li class="headerSubMenuItem"><a class="headerSubMenuItemLink button headerPhoneButton"></a></li>
                 <li class="headerSubMenuItem"><a class="headerSubMenuItemLink button headerTelegramButton"></a></li>
               </ul>
@@ -46,9 +46,136 @@
             </div>
           </div>
         </div>
+        <div class="container-fluid headerFixedLine d-none d-md-block">
+          <div class="row">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="d-none logo"><img class="img-fluid" src="assets/images/logoWhite.png"/></div>
+                <div class="d-none">
+                  <ul class="headerFixedMenuLeft">
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">О компании</a></li>
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">Новости</a></li>
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">Цена</a></li>
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="col-12">
+                  <ul class="headerFixedMenuRight justify-content-between">
+                    <li class="headerFixedMenuRightItem"><a class="headerFixedMenuRightItemLink">Бухгалтерские услуги</a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Бухгалтерское сопровождение фирм</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Восстановление учета</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Передача отчетности</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Сверка с МИФНС, ПФ и ФСС</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">нулевая отчетность</a></li>
+                      </ul>
+                    </li>
+                    <li class="headerFixedMenuRightItem"><a class="headerFixedMenuRightItemLink">налоговое консультирование</a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Декларация 3-НДФЛ</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Камеральные проверки</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выездная налоговоя проверка</a></li>
+                      </ul>
+                    </li>
+                    <li class="headerFixedMenuRightItem"><a class="headerFixedMenuRightItemLink">дополнительные услуги</a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Юридические услуги</a>
+                          <ul class="dropDownMenuSectionsList">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация юридических лиц</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Открытие р/с</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выписка из ЕГРЮЛ</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Внесение изменений в ЕГРЮЛ</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация филиалов</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Реорганизация предприятий</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Ликвидация юр. лица</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Онлайн услуги</a>
+                          <ul class="dropDownMenuSectionsList">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма заказа для подготовки сдачи нулевой	отчетности</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма для регистрации ООО/ИП</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Калькулятор услуг</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSections">
+                          <ul class="dropDownMenuSectionsList">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Для начинающих предпринимателей</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Кадровое делопроизводство</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Почтово-секретарское обслуживание</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Курьерские услуги</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-none">
+                  <ul class="headerFixedSubMenu justify-content-end">
+                    <li class="headerFixedSubMenuItem"><a class="buttonWhite headerFixedSubMenuItemLink headerFixedPhoneButton"></a></li>
+                    <li class="headerFixedSubMenuItem"><a class="buttonWhite headerFixedSubMenuItemLink headerFixedTelegramButton"></a></li>
+                    <li class="headerFixedSubMenuItem d-xl-none"><a class="buttonWhite headerFixedSubMenuItemLink headerFixedDropdownMenuButton" id="headerFixedDropdownMenuButton"></a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSectionsMain"><a class="dropDownMenuSectionsMainLink">бухгалтерские услуги</a>
+                          <ul class="dropDownMenu">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Бухгалтерское сопровождение фирм</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Восстановление учета</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Передача отчетности</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Сверка с МИФНС, ПФ и ФСС</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">нулевая отчетность</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSectionsMain"><a class="dropDownMenuSectionsMainLink">налоговое консультирование</a>
+                          <ul class="dropDownMenu">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Декларация 3-НДФЛ</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Камеральные проверки</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выездная налоговоя проверка</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSectionsMain"><a class="dropDownMenuSectionsMainLink">дополнительные услуги</a>
+                          <ul class="dropDownMenu">
+                            <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Юридические услуги</a>
+                              <ul class="dropDownMenuSectionsList">
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация юридических лиц</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Открытие р/с</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выписка из ЕГРЮЛ</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Внесение изменений в ЕГРЮЛ</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация филиалов</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Реорганизация предприятий</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Ликвидация юр. лица</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Онлайн услуги</a>
+                              <ul class="dropDownMenuSectionsList">
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма заказа для подготовки сдачи нулевой	отчетности</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма для регистрации ООО/ИП</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Калькулятор услуг</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropDownMenuSections">
+                              <ul class="dropDownMenuSectionsList">
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Для начинающих предпринимателей</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Кадровое делопроизводство</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Почтово-секретарское обслуживание</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Курьерские услуги</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-    <section></section>
+    <section class="mainContent container-fluid">
+      <div class="row">
+        <div class="container"></div>
+      </div>
+    </section>
     <footer>
       <script src="assets/js/jquery-3.2.1.min.js"></script>
       <script src="assets/js/popper.min.js"></script>

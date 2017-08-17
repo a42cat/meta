@@ -5,79 +5,365 @@
 	border-style: solid; */
 	box-shadow: inset 0 2px 0 #47a4bc, inset 2px 0 0 #22e4c4, inset 0 -2px 0 #47a4bc, inset -2px 0 0 #725cb3;
 }
+.buttonWhite {
+	border-radius: 50px;
+	border:2px solid #fff;
+}
 header {
-	padding-top: 25px;
-	padding-bottom: 25px;
 	background-image: url(../images/headerBG.png);
 	min-height: 500px;
 	background-size: cover;
 	background-position: center top;
-	.headerTopMenu {
-		width:100%;
-		list-style: none;
-		padding: 0;
-		margin-bottom: 0;
-		display: flex;
-		justify-content: space-around;
-		.headerTopMenuItem {
-			.headerTopMenuItemLink {
-				&:hover {
-					color:#000;
-				}
-				color:#987dd6;
-				font-weight: bold;
-			}
-		}
-	}
-	.headerSubMenu {
-		margin-bottom: 0;
-		list-style:none;
-		padding-left: 0;
-		display: flex;
-		.headerSubMenuItem {
-			margin-right: 15px;
-			&:nth-last-child(1) {
-				margin-right: 0;
-			}
-			.headerSubMenuItemLink {
-				&.button {
-					display: block;
-					width: 45px;
-					height: 45px;
-					background-size: 25px;
-					background-repeat: no-repeat;
-					background-position: center center;
-				}
-				&.headerPhoneButton {
-					background-image:url(../images/phoneIco.png);
-				}
-				&.headerTelegramButton {
-					background-image:url(../images/telegramIco.png);
-					background-position: 8px 12px;
-				}
-				&.headerDropdownMenuButton {
-					background-image:url(../images/menuIco.png);
-				}
-			}
-		}
-	}
-	.headerContactBlock {
-		p {
-			color:#7459b3;
+	.headerTopMenuWrap {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		.headerTopMenu {
+			width:100%;
 			margin-bottom: 0;
-			line-height: 22px;
-			&.phone {
-				font-weight: 700;
-				font-size:16px;
-				span {
+			display: flex;
+			justify-content: space-around;
+			.headerTopMenuItem {
+				.headerTopMenuItemLink {
+					&:hover {
+						color:#000;
+					}
+					color:#987dd6;
+					font-family:'Conv_PFBEAUSANSPRO-SEBOLD';
 					font-weight: bold;
-					font-size:26px;
 				}
 			}
-			&.address {
-				font-weight: 500;
-				font-size: 16px;
+		}
+		.headerSubMenu {
+			margin-bottom: 0;
+			display: flex;
+			.headerSubMenuItem {
+				margin-right: 15px;
+				&:nth-last-child(1) {
+					margin-right: 0;
+				}
+				.headerSubMenuItemLink {
+					&.button {
+						display: block;
+						width: 45px;
+						height: 45px;
+						background-size: 25px;
+						background-repeat: no-repeat;
+						background-position: center center;
+					}
+					&.headerPhoneButton {
+						background-image:url(../images/phoneIco.png);
+					}
+					&.headerTelegramButton {
+						background-image:url(../images/telegramIco.png);
+						background-position: 8px 12px;
+					}
+					&.headerDropdownMenuButton {
+						background-image:url(../images/menuIco.png);
+					}
+				}
+			}
+		}
+		.headerContactBlock {
+			p {
+				color:#7459b3;
+				margin-bottom: 0;
+				line-height: 22px;
+				&.phone {
+					font-family:'Conv_PFBEAUSANSPRO-REG';
+					font-size:16px;
+					span {
+						font-size:26px;
+						font-family:'Conv_PFBEAUSANSPRO-SEBOLD';
+					}
+				}
+				&.address {
+					font-size: 16px;
+					font-family:'Conv_PFBEAUSANSPRO-REG';
+				}
 			}
 		}
 	}
+	.headerFixedLine {
+		position: static;
+		top:-100%;
+		min-height:45px;
+		background-color: #987dd6;
+		&.fixed {
+			position: fixed;
+			top:0%;
+		  transition: all .3s ease;
+		  .headerFixedMenuRight {
+		  	height: 65px;
+		  }
+		  >.dropDownMenu {
+		  	top:65px!important;
+		  }
+		  .row {
+				.container {
+					.row {
+						height: 65px;
+						position: relative;
+						> div {
+							position: static;
+						}
+					}
+				}
+			}
+		}
+		.row {
+			.container {
+				.row {
+					height: 45px;
+				}
+			}
+		}
+		.headerFixedMenuLeft {
+			display: flex;
+			flex-wrap: wrap;
+			.headerFixedMenuLeftItem {
+				width:50%;
+				line-height: 15px;
+				.headerFixedMenuLeftItemLink {
+					color:#fff;
+					font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+					font-size:16px;
+					line-height: 15px;
+				}
+			}
+		}
+		.headerFixedMenuRight {
+			display: flex;
+			flex-direction: row;
+			flex-wrap:nowrap;
+			height: 45px;
+			align-items: center;
+			.headerFixedMenuRightItem {
+				text-align: center;
+				line-height: 15px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				position: relative;
+				&:first-child {
+					left:-20px;
+					.dropDownMenu {
+						left:0;
+					}
+				}
+				&:last-child {
+					position: relative;
+					right:-20px;
+					&:before {
+						content: "";
+						display: block;
+						position: absolute;
+						opacity: 0;
+						bottom: 0;
+						width: 20px;
+						height: 20px;
+						/* background-color: #fff; */
+						background: radial-gradient(circle farthest-side at 0px 0px, transparent 20px, #FFF 0px);
+						left: -20px;
+						z-index: 2;
+					}
+					.dropDownMenu {
+						right:0;
+						flex-direction: row-reverse;
+						border-top-left-radius:25px;
+					}
+				}
+				&:hover {
+					border-top-left-radius: 25px;
+					border-top-right-radius: 25px;
+					color:#44e7cf;
+					background-color:#fff;
+					cursor: pointer;
+					&:before {
+						opacity:1;
+					}
+					.headerFixedMenuRightItemLink {
+						color:#2ce5cb;
+						position: relative;
+						background-color: #fff;
+						border-top-left-radius: 25px;
+						border-top-right-radius: 25px;
+					}
+					.dropDownMenu {
+						display: flex;
+					}
+				}
+				.dropDownMenu {
+					display: none;
+					position:absolute;
+					top: 45px;
+					background-color:#fff;
+					border-bottom-left-radius: 25px;
+					border-bottom-right-radius: 25px;
+					flex-direction: column;
+					padding-top: 10px;
+					padding-bottom: 20px;
+					min-width:100%;
+					box-shadow: 0px 0px 15px rgba(68, 30, 104, .3);
+					z-index: 0;
+					.dropDownMenuSections {
+						min-width:200px;
+						margin-top: 10px;
+						.dropDownMenuSectionsLink {
+							font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+							font-size:15px;
+							line-height: 14px;
+							color:#000;
+							line-height: 15px;
+							padding-left: 20px;
+							padding-right: 20px;
+							width: 100%;
+							display: block;
+							text-align: left;
+						}
+						.dropDownMenuSectionsList {
+
+						}
+					}
+					.dropDownMenuSectionsListItem {
+						text-align:left;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						&:hover {
+							background-color:#d9fbf6;
+						}
+						.dropDownMenuSectionsListItemLink {
+							font-family: 'Conv_PFBEAUSANSPRO-REG';
+							font-size:15px;
+							color:#000;
+							line-height: 15px;
+							padding-left: 20px;
+							padding-right: 20px;
+							width: 100%;
+							display: block;
+						}
+					}
+				}
+				.headerFixedMenuRightItemLink {
+					z-index: 2;
+					font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+					color:#fff;
+					font-size:14px;
+					line-height: 15px;
+					text-transform: uppercase;
+					padding-right: 20px;
+					padding-left: 20px;
+					height: 100%;
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+		.headerFixedSubMenu {
+			display: flex;
+			.headerFixedSubMenuItem {
+				margin-left: 15px;
+				position:static;
+				&:first-child {
+					margin-left: 0;
+				}
+				>.dropDownMenu {
+					display: none;
+					position: absolute;
+					top:65px;
+					right:0;
+					min-width:650px;
+					width: 100%;
+					background-color: #fff;
+					border-bottom-left-radius: 25px;
+					border-bottom-right-radius: 25px;
+					border-top-left-radius: 25px;
+					box-shadow: 0px 0px 15px rgba(68, 30, 104, .3);
+					padding-top: 20px;
+					padding-bottom: 20px;
+					.dropDownMenuSectionsMain {
+						border-right: 1px solid #bebebe;
+						width: calc(100% /3);
+						&:last-child {
+							border-right:0;
+						}
+						.dropDownMenuSectionsMainLink {
+							font-size:15px;
+							font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+							text-transform:uppercase;
+							color:#000;
+							line-height: 20px;
+							text-align:center;
+							padding-left: 30px;
+							padding-right: 30px;
+							display: block;
+							width: 100%;
+							margin-top: 10px;
+							margin-bottom: 50px;
+						}
+						.dropDownMenuSections {
+							margin-bottom: 50px;
+							&:last-child {
+								margin-bottom: 0;
+							}
+							.dropDownMenuSectionsLink {
+								font-size:15px;
+								font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+								text-transform:uppercase;
+								color:#000;
+								padding-left: 30px;
+								padding-right: 30px;
+								display: block;
+								margin-bottom: 15px;
+							}
+						}
+						.dropDownMenuSectionsListItem {
+							padding-top: 5px;
+							padding-bottom: 5px;
+							.dropDownMenuSectionsListItemLink {
+								display: block;
+								width:100%;
+								color:#000;
+								font-family: 'Conv_PFBEAUSANSPRO-REG';
+								font-size:15px;
+								line-height: 20px;
+								padding-left: 30px;
+								padding-right: 30px;
+								&:hover {
+									background-color:#d9fbf6;
+								}
+							}
+						}
+					}
+				}
+				.headerFixedSubMenuItemLink {
+					&.buttonWhite {
+						display: block;
+						width: 45px;
+						height: 45px;
+						background-size: 25px;
+						background-repeat: no-repeat;
+						background-position: center center;
+						padding-top: 20px;
+						padding-bottom: 20px;
+					}
+					&.headerFixedPhoneButton {
+						background-image:url(../images/phoneWhiteIco.png);
+					}
+					&.headerFixedTelegramButton {
+						background-image:url(../images/telegramWhiteIco.png);
+						background-position: 7px 10px;
+					}
+					&.headerFixedDropdownMenuButton {
+						background-image:url(../images/menuWhiteIco.png);
+						&:hover+.dropDownMenu {
+							display: flex;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.mainContent {
+	height:1000px;
 }
