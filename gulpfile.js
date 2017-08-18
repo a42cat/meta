@@ -16,7 +16,8 @@ gulp.task("sass", function() {
   return gulp.src("src/scss/**/*.scss")
   .pipe(sourcemaps.init())
   .pipe(autoprefixer({
-      browsers: ['last 2 versions']
+      browsers: ['last 10 versions'],
+      cascade: false
   }))
   .pipe(sass())
   /*.pipe(cssnano())
