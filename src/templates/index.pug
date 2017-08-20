@@ -1,13 +1,18 @@
 include mixins/head.pug
 include mixins/header.pug
+include mixins/textBlock1.pug
+include mixins/advantages.pug
+include mixins/experts.pug
 include mixins/footer.pug
+include mixins/scripts.pug
 
 doctype 
 html(lang="ru")
 	+head()
 	body
 		+header()
-		section.mainContent.container-fluid
-			.row
-				.container
+		+textBlock1()
+		+advantagesBlock()
+		+expertsBlock()
 		+footer()
+		+scripts()

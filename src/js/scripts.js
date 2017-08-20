@@ -10,19 +10,80 @@ function initHeaderMenu() {
 	$('.headerDropdiwnMenuItemMainLink').on('click',function() {
 		$(this).toggleClass('active');
 		$(this).next().toggleClass('show');
+		$('.headerDropdownMenuInnerItemLink.subCat').removeClass('active').next().removeClass('show');
+	});
+	$('.headerDropdownMenuInnerItemLink.subCat').on('click',function() {
+		$(this).toggleClass('active');
+		$(this).next().toggleClass('show');
+	});
+}
+function initAdvantagesSlider() {
+	var advantagesSlider = $('.advantagesSlider');
+	function checkMainSlide(e) {
+		if (typeof e != 'undefined') {
+			$('.advantagesBlock #currentItem').text(e.item.index + 1);
+		}
+		var slideElemCount = advantagesSlider[0].children[0].children[0].childElementCount;
+		$('.advantagesBlock #maxItem').text(slideElemCount);
+		advantagesSlider.find('.owl-item').removeClass('big');
+		advantagesSlider.find('.active:eq(1)').addClass('big');
+	}
+	advantagesSlider.owlCarousel({
+		nav: true,
+		navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
+		margin: 10,
+		responsiveClass:true,
+		responsive : {
+			0 : {
+				items:1
+			},
+			768 : {
+				items:3
+			},
+			992 : {
+				items:3
+			},
+			1200 : {
+				items:3
+			},
+			1900 : {
+				items:2
+			}
+		}
+	});
+	checkMainSlide();
+	advantagesSlider.on('translated.owl.carousel', function(e) {
+		checkMainSlide(e);
+	});
+}
+function initExpertsSlider() {
+	var expertsSlider = $('.expertsSlider');
+	expertsSlider.owlCarousel({
+		nav:false,
+		dots: true,
+		items:1,
+		navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
+		responsive: {
+			0: {
+				nav: true
+			},
+			768: {
+				nav:false
+			}
+		}
 	});
 }
 $(document).ready(function () {
 	console.log('script run...');
 	
 	initHeaderMenu();
-
+	initAdvantagesSlider();
+	initExpertsSlider();
 	console.log('script end.');
 });
 
 $(window).on('scroll',function() {
 	var scrollbody = $(window).scrollTop();
-	console.log(scrollbody);
 	if (scrollbody >= 200) {
 		$('.headerFixedLine').addClass('fixed');
 		$('.headerFixedLine .logo').removeClass('d-none');

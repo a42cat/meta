@@ -44,6 +44,41 @@ mixin header()
 												a.headerDropdownMenuInnerItemLink Выездная налоговоя проверка
 									li.headerDropdiwnMenuItemMain
 										a.headerDropdiwnMenuItemMainLink дополнительные услуги
+										ul.headerDropdownMenuInner
+											li.headerDropdownMenuInnerItem
+												a.headerDropdownMenuInnerItemLink.subCat Онлайн услуги
+												ul.headerDropdownMenuInnerSub
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Форма заказа для подготовки сдачи нулевой отчетности
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Форма для регистрации ООО/ИП
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Калькулятор услуг
+											li.headerDropdownMenuInnerItem
+												a.headerDropdownMenuInnerItemLink.subCat Юридические услуги
+												ul.headerDropdownMenuInnerSub
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Регистрация юридических лиц
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Открытие р/с
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Выписка из ЕГРЮЛ
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Внесение изменений в ЕГРЮЛ
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Регистрация филиалов
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Реорганизация предприятий
+													li.headerDropdownMenuInnerSubItem
+														a.headerDropdownMenuInnerSubItemLink Ликвидация юр. лица
+											li.headerDropdownMenuInnerItem
+												a.headerDropdownMenuInnerItemLink Для начинающих предпринимателей
+											li.headerDropdownMenuInnerItem
+												a.headerDropdownMenuInnerItemLink Кадровое делопроизводство
+											li.headerDropdownMenuInnerItem
+												a.headerDropdownMenuInnerItemLink Почтово-секретарское обслуживание
+											li.headerDropdownMenuInnerItem
+												a.headerDropdownMenuInnerItemLink Курьерские услуги
 							li.headerSubMenuItem
 								a.headerSubMenuItemLink.button.headerPhoneButton
 							li.headerSubMenuItem
@@ -134,11 +169,11 @@ mixin header()
 							.d-none
 								ul.headerFixedSubMenu.justify-content-end
 									li.headerFixedSubMenuItem
-										a.buttonWhite.headerFixedSubMenuItemLink.headerFixedPhoneButton
+										a.button.buttonWhite.headerFixedSubMenuItemLink.headerFixedPhoneButton
 									li.headerFixedSubMenuItem
-										a.buttonWhite.headerFixedSubMenuItemLink.headerFixedTelegramButton
+										a.button.buttonWhite.headerFixedSubMenuItemLink.headerFixedTelegramButton
 									li.headerFixedSubMenuItem.d-xl-none
-										a.buttonWhite.headerFixedSubMenuItemLink.headerFixedDropdownMenuButton#headerFixedDropdownMenuButton
+										a.button.buttonWhite.headerFixedSubMenuItemLink.headerFixedDropdownMenuButton#headerFixedDropdownMenuButton
 										ul.dropDownMenu
 											li.dropDownMenuSectionsMain
 												a.dropDownMenuSectionsMainLink бухгалтерские услуги 
@@ -201,3 +236,15 @@ mixin header()
 																a.dropDownMenuSectionsListItemLink Почтово-секретарское обслуживание
 															li.dropDownMenuSectionsListItem
 																a.dropDownMenuSectionsListItemLink Курьерские услуги
+			.container.headerBanner
+				.row
+					.col-xl-3.col-lg-4.ml-lg-auto.mr-lg-0.col-md-5.ml-md-auto.mr-md-auto.d-none.d-md-block.headerBannerPhoto
+						img.mx-auto.d-block.img-fluid(src="/assets/images/mainBannerPhoto.png")
+						p.text.text-center Н.В. Махрова, генеральный директор
+							br 
+							| ООО «Бухгалтерская компания «Мета»
+					.d-flex.flex-column.justify-content-between.align-items-md-center.col-xl-7.col-lg-8.ml-lg-0.mr-lg-auto.col-md-10.ml-md-auto.mr-md-auto.col-12.headerBannerText
+						p.title.text-md-center Ваша бухгалтерия — наша забота!
+						p.text 326 организаций доверяют ведение налоговой отчетности и бухгалтерии нашим 
+							a сертифицированным специалистам
+						a.button.buttonCallback.align-self-lg-baseline.align-self-center Присоединиться!

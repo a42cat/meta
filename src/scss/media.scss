@@ -12,12 +12,104 @@
 			}
 		}
 	}
+	.advantagesSlider {
+		.owl-stage {
+			.owl-item {
+				.item {
+					img {
+						max-width:180px!important;
+					}
+					.text {
+						opacity:1!important;
+					}
+				}
+			}
+		}
+		.owl-nav {
+			.owl-next,.owl-prev {
+				z-index:2;
+				position: absolute;
+				top:85px!important;
+			}
+			.owl-prev {
+				left:-35px!important;
+			}
+			.owl-next {
+				right:-35px!important;
+			}
+		}
+	}
+	.expertsSlider {
+		.owl-nav {
+			.owl-next {
+				right:15px;
+			}
+			.owl-prev {
+				left:15px;
+			}
+		}
+	}
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) and (max-width: 767px) {
+	.advantagesSlider {
+		.owl-nav {
+			.owl-next,.owl-prev {
+				top:110px!important;
+			}
+		}
+	}
+	.expertsSlider {
+		.owl-nav {
+			.owl-next {
+				right:-45px;
+			}
+			.owl-prev {
+				left:-45px;
+			}
+		}
+	}
+}
 
 @media (max-width: 767px) {
+	.expertsSlider {
+		margin-top: 30px;
+		.item {
+			padding-left: 0!important;
+		}
+		.owl-nav {
+			position: absolute;
+			width: calc(100% - 30px);
+			display: block;
+			height: 100%;
+			z-index: -1;
+			.owl-next,.owl-prev {
+				position: absolute;
+				top: 30px;
+			}
+		}
+	}
+	.advantagesSlider {
+		.owl-stage {
+			.owl-item {
+				.item {
+					img {
+						max-width:180px!important;
+					}
+					.text {
+						opacity:1!important;
+					}
+				}
+			}
+		}
+		.owl-nav {
+			.owl-next,.owl-prev {
+				z-index:2;
+				position: absolute;
+			}
+		}
+	}
 	.headerTopMenuWrap {
 		padding-top: 0!important;
 		padding-bottom: 0!important;
@@ -30,13 +122,42 @@
 			}
 		}
 	}
+	.headerBanner {
+		padding-top: 50px!important;
+		padding-bottom: 50px!important;
+		.headerBannerText {
+			.title {
+				font-size: 33px!important;
+				line-height: 40px!important;
+			}
+			.text {
+				margin-bottom: 50px!important;
+			}
+		}
+	}
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
-
+	.headerBanner {
+		padding-top: 75px;
+		padding-bottom: 240px;
+		.headerBannerPhoto {
+			.text {
+				margin-bottom: 65px!important;
+			}
+		}
+	}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
+	.headerBanner {
+		padding-top: 85px;
+		padding-bottom: 125px;
+		.headerBannerPhoto {
+			.text {
+				margin-bottom: 0px!important;
+			}
+		}
+	}
 }
 @media (max-width: 1199px) {
 	.headerFixedSubMenu {
