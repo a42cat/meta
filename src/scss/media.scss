@@ -49,6 +49,28 @@
 			}
 		}
 	}
+	.servicesTabsBlock {
+		.tabContainerWrap {
+			.tab-content {
+				.tab-pane {
+					.owl-carousel {
+						.owl-nav {
+							.owl-next,.owl-prev {
+								position: absolute;
+								top: 8px;
+							}
+							.owl-next {
+								right:-50px;
+							}
+							.owl-prev {
+								left:-50px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -70,9 +92,72 @@
 			}
 		}
 	}
+	.servicesTabsBlock {
+		.tabContainerWrap {
+			.tab-content {
+				.tab-pane {
+					.owl-carousel {
+						.owl-nav {
+							.owl-next,.owl-prev {
+								position: absolute;
+								top: 50px;
+							}
+							.owl-next {
+								right:-50px;
+							}
+							.owl-prev {
+								left:-50px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
+	.servicesTabsBlock {
+		.nav-tabs {
+			display: none!important;
+		}
+		.tabContainerWrap {
+			box-shadow:none!important;
+			.tab-content {
+				.tab-pane {
+					opacity:1!important;
+					display: block!important;
+					margin-bottom: 65px!important;
+					&:last-child {
+						margin-bottom: 0!important;
+					}
+					.owl-carousel {
+						.owl-stage {
+							.owl-item {
+								.item {
+									.imgBlock {}
+									.textBlock {
+										text-align: center;
+										.description {
+											display: none!important;
+										}
+									}
+								}
+							}
+						}
+						.owl-nav {
+							position: absolute;
+							width: calc(100% - 30px);
+							display: block;
+							height: 100%;
+							z-index: -1;
+							top:0;
+						}
+					}
+				}
+			}
+		}
+	}
 	.expertsSlider {
 		margin-top: 30px;
 		.item {
@@ -137,7 +222,7 @@
 	}
 }
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
 	.headerBanner {
 		padding-top: 75px;
 		padding-bottom: 240px;
@@ -147,6 +232,47 @@
 			}
 		}
 	}
+	.tabContainerWrap {
+		.tab-content {
+			.owl-carousel {
+				.owl-stage {
+					display: flex;
+					.owl-item {
+						display: flex;
+						.item {
+							position: relative;
+							padding-bottom: 65px;
+							.buttonCallback {
+								position:absolute;
+								bottom:15px;
+								left:0;
+								width:100%;
+							}
+						}
+					}
+				}
+				.owl-dots {
+					margin: 35px 0 15px;
+				}
+				.owl-nav {
+					position: absolute;
+					left: 0;
+					bottom: 58px;
+					width: 100%;
+					.owl-prev,.owl-next {
+						position:absolute;
+					}
+					.owl-prev {
+						left:25%;
+					}
+					.owl-next {
+						right:25%;
+					}
+				}
+			}
+		}
+	}
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 	.headerBanner {

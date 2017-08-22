@@ -1,0 +1,106 @@
+mixin servicesTabsBlock()
+	section.container-fluid.servicesTabsBlock
+		.row
+			h2.col-12.title какие услуги мы предоставляем
+		.row
+			.container
+				ul.nav.nav-tabs.col-xl-11.col-lg-11.mx-auto.d-flex.justify-content-around(role="tablist")
+					li.nav-item
+						a#tabButton1.nav-link.active(href="#tabs1"  data-toggle="tab" role="tab" aria-controls="tabs1" aria-expanded="false") Бухгалтерское обслуживание
+					li.nav-item
+						a#tabButton2.nav-link(href="#tabs2"  data-toggle="tab" role="tab" aria-controls="tabs2" aria-expanded="false") Налоговое сопровождение
+					li.nav-item
+						a#tabButton3.nav-link(href="#tabs3"  data-toggle="tab" role="tab" aria-controls="tabs3" aria-expanded="false") Прочее
+			.container-fluid
+				.row.tabContainerWrap
+					.container.tab-content
+						#tabs1.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="tabButton1") 
+							.servicesSlider1.owl-carousel.col-xl-11.col-lg-11.col-md-11.col-sm-11.col-9.mx-auto
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Бухгалтерское сопровождение фирм
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Восстановление учета
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Передача отчетности
+										p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. 
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Бухгалтерское сопровождение фирм
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+						#tabs2.tab-pane.fade(role="tabpanel" aria-labelledby="tabButton2")
+							.servicesSlider2.owl-carousel.col-xl-11.col-lg-11.col-md-11.col-sm-11.col-9.mx-auto
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Бухгалтерское сопровождение фирм
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Восстановление учета
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Передача отчетности
+										p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. 
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Бухгалтерское сопровождение фирм
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+						#tabs3.tab-pane.fade(role="tabpanel" aria-labelledby="tabButton3")
+							.servicesSlider3.owl-carousel.col-xl-11.col-lg-11.col-md-11.col-sm-11.col-9.mx-auto
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Бухгалтерское сопровождение фирм
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Восстановление учета
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Передача отчетности
+										p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. 
+									a.button.buttonCallback Подробнее
+								.item.d-flex.d-sm-flex.d-md-block.flex-column.align-items-center
+									.imgBlock.col-12.col-sm-9.col-md-12
+										img.img-fluid(src="/assets/images/servicesSlide1.png")
+									.textBlock
+										p.title Бухгалтерское сопровождение фирм
+										p.description За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.
+									a.button.buttonCallback Подробнее

@@ -6,3 +6,33 @@ ul {
 p {
 	margin-bottom: 15px;
 }
+.tab-content
+{
+	.tab-pane {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}
+.owl-carousel {
+	.owl-stage{
+		.owl-item {}
+	}
+	.owl-navs {}
+	.owl-dots {
+		width:100%;
+		text-align:center;
+		.owl-dot {
+			background-color:#bebebe;
+			width:13px;
+			height:13px;
+			display: inline-block;
+			border-radius: 25px;
+			margin: 35px 5px 0;
+			&.active {
+				background-color:#40e9d2;
+			}
+		}
+	}
+}

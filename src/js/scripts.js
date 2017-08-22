@@ -47,7 +47,7 @@ function initAdvantagesSlider() {
 				items:3
 			},
 			1900 : {
-				items:2
+				items:3
 			}
 		}
 	});
@@ -73,12 +73,48 @@ function initExpertsSlider() {
 		}
 	});
 }
+function initServicesSliders() {
+	var servicesSlider1 = $('.servicesSlider1');
+	var servicesSlider2 = $('.servicesSlider2');
+	var servicesSlider3 = $('.servicesSlider3');
+	var servicesSlidersOptions = {
+		nav:true,
+		navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
+		dots:true,
+		responsiveClass:true,
+		margin:50,
+		responsive : {
+			0 : {
+				items:1
+			},
+			768 : {
+				items:3
+			},
+			992 : {
+				items:3
+			},
+			1200 : {
+				items:3
+			},
+			1900 : {
+				items:3
+			}
+		}
+	}
+	$('.servicesTabsBlock a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+		$('.servicesTabsBlock .tab-pane').removeClass('active show');
+	});
+	servicesSlider1.owlCarousel(servicesSlidersOptions);
+	servicesSlider2.owlCarousel(servicesSlidersOptions);
+	servicesSlider3.owlCarousel(servicesSlidersOptions);
+}
 $(document).ready(function () {
 	console.log('script run...');
 	
 	initHeaderMenu();
 	initAdvantagesSlider();
 	initExpertsSlider();
+	initServicesSliders();
 	console.log('script end.');
 });
 

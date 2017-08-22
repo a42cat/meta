@@ -16,7 +16,7 @@ gulp.task("sass", function() {
   return gulp.src("src/scss/**/*.scss")
   .pipe(sourcemaps.init())
   .pipe(autoprefixer({
-      browsers: ['last 10 versions'],
+      browsers: ['last 30 versions'],
       cascade: false
   }))
   .pipe(sass())
