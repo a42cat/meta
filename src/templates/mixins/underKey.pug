@@ -3,12 +3,19 @@ mixin underKeyBlock()
 		.row
 			.container
 				.row
-					.col-11.col-md-6
+					h2.col-12 Мы специализируемся 
+						br
+						| на полном сопровождении «под ключ»
+				.row.underKeyFormWrap
+					.col-12.col-md-6
 						.textBlock
 							p.text Мы специализируемся на полном сопровождении "под ключ". Вам больше не нужно переплачивать штатным бухгалтерам. Как правило стоимость обслуживания в нашей компании на поверку оказывается значительно ниже, чем расходы на штатных бухгалтеров. Отправьте заявку на персональный расчет обслуживания вашей компании и убедитесь в этом сами!
-					.col-11.col-md-5.ml-md-1
+					.col-12.col-md-5.ml-md-auto
 						.formBlock
 							form
-								input(type="text" name="name" placeholder="Ваше имя")
-								input(type="email" name="email" placeholder="Ваш E-mail")
-								button.button.buttonCallback(type="submit") Отправить заявку
+								.form-group
+									input.form-control(type="text" name="name" placeholder="Ваше имя")
+								.form-group
+									input.form-control(type="email" name="email" placeholder="Ваш E-mail")
+								.form-group
+									button.button.buttonCallback(type="submit") Отправить заявку

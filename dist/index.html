@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8"/>
     <title>test</title>
+    <base href="/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="Keywords" lang="ru" content=""/>
     <meta name="Description" lang="ru" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="author" href="phantomkemerovo@mail.ru"/>
     <link rel="stylesheet" href="assets/css/normolize.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
@@ -24,7 +26,7 @@
       <div class="row">
         <div class="container headerTopMenuWrap">
           <div class="row align-items-center">
-            <div class="col-4 col-xl-2 col-lg-2 col-md-2 logo"><img class="img-fluid" src="assets/images/logoColor.png"/></div>
+            <div class="col-4 col-xl-2 col-lg-2 col-md-2 logo"><a href="/"><img class="img-fluid" src="assets/images/logoColor.png"/></a></div>
             <div class="col-xl-5 col-lg-5 col-md-8 d-none d-md-flex">
               <ul class="headerTopMenu">
                 <li class="headerTopMenuItem"><a class="headerTopMenuItemLink">О компании</a></li>
@@ -37,7 +39,7 @@
               <ul class="headerSubMenu d-flex justify-content-sm-end justify-content-md-start justify-content-end">
                 <li class="headerSubMenuItem d-md-none d-xl-none d-lg-none"><a class="headerSubMenuItemLink button headerDropdownMenuButton" id="headerDropdownMenuButton"></a>
                   <ul class="headerDropdownMenuWrap">
-                    <li class="headerDropdiwnMenuItemMain"><a class="headerDropdiwnMenuItemMainLink">бухгалтерские услуги</a>
+                    <li class="headerDropDownMenuItemMain"><a class="headerDropDownMenuItemMainLink">бухгалтерские услуги</a>
                       <ul class="headerDropdownMenuInner">
                         <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Бухгалтерское сопровождение фирм</a></li>
                         <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Восстановление учета</a></li>
@@ -46,14 +48,14 @@
                         <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">нулевая отчетность</a></li>
                       </ul>
                     </li>
-                    <li class="headerDropdiwnMenuItemMain"><a class="headerDropdiwnMenuItemMainLink">налоговое консультирование</a>
+                    <li class="headerDropDownMenuItemMain"><a class="headerDropDownMenuItemMainLink">налоговое консультирование</a>
                       <ul class="headerDropdownMenuInner">
                         <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Декларация 3-НДФЛ</a></li>
                         <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Камеральные проверки</a></li>
                         <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Выездная налоговоя проверка</a></li>
                       </ul>
                     </li>
-                    <li class="headerDropdiwnMenuItemMain"><a class="headerDropdiwnMenuItemMainLink">дополнительные услуги</a>
+                    <li class="headerDropDownMenuItemMain"><a class="headerDropDownMenuItemMainLink">дополнительные услуги</a>
                       <ul class="headerDropdownMenuInner">
                         <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink subCat">Онлайн услуги</a>
                           <ul class="headerDropdownMenuInnerSub">
@@ -95,7 +97,7 @@
           <div class="row">
             <div class="container">
               <div class="row align-items-center">
-                <div class="d-none logo"><img class="img-fluid" src="assets/images/logoWhite.png"/></div>
+                <div class="d-none logo"><a href="/"><img class="img-fluid" src="assets/images/logoWhite.png"/></a></div>
                 <div class="d-none">
                   <ul class="headerFixedMenuLeft">
                     <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">О компании</a></li>
@@ -344,7 +346,7 @@
       </div>
       <div class="row">
         <div class="container">
-          <ul class="nav nav-tabs col-xl-11 col-lg-11 mx-auto d-flex justify-content-around" role="tablist">
+          <ul class="nav nav-tabs col-xl-12 col-lg-12 mx-auto d-flex justify-content-around" role="tablist">
             <li class="nav-item"><a class="nav-link active" id="tabButton1" href="#tabs1" data-toggle="tab" role="tab" aria-controls="tabs1" aria-expanded="false">Бухгалтерское обслуживание</a></li>
             <li class="nav-item"><a class="nav-link" id="tabButton2" href="#tabs2" data-toggle="tab" role="tab" aria-controls="tabs2" aria-expanded="false">Налоговое сопровождение</a></li>
             <li class="nav-item"><a class="nav-link" id="tabButton3" href="#tabs3" data-toggle="tab" role="tab" aria-controls="tabs3" aria-expanded="false">Прочее</a></li>
@@ -354,31 +356,31 @@
           <div class="row tabContainerWrap">
             <div class="container tab-content">
               <div class="tab-pane fade show active" id="tabs1" role="tabpanel" aria-labelledby="tabButton1"> 
-                <div class="servicesSlider1 owl-carousel col-xl-11 col-lg-11 col-md-11 col-sm-11 col-9 mx-auto">
+                <div class="servicesSlider1 owl-carousel col-xl-12 col-lg-12 col-md-11 col-sm-11 col-9 mx-auto">
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Бухгалтерское сопровождение фирм</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Восстановление учета</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Передача отчетности</p>
                       <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. </p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Бухгалтерское сопровождение фирм</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
@@ -389,28 +391,28 @@
                 <div class="servicesSlider2 owl-carousel col-xl-11 col-lg-11 col-md-11 col-sm-11 col-9 mx-auto">
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Бухгалтерское сопровождение фирм</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Восстановление учета</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Передача отчетности</p>
                       <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. </p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Бухгалтерское сопровождение фирм</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
@@ -421,28 +423,28 @@
                 <div class="servicesSlider3 owl-carousel col-xl-11 col-lg-11 col-md-11 col-sm-11 col-9 mx-auto">
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Бухгалтерское сопровождение фирм</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Восстановление учета</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Передача отчетности</p>
                       <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. </p>
                     </div><a class="button buttonCallback">Подробнее</a>
                   </div>
                   <div class="item d-flex d-sm-flex d-md-block flex-column align-items-center">
                     <div class="imgBlock col-12 col-sm-9 col-md-12"><img class="img-fluid" src="/assets/images/servicesSlide1.png"/></div>
-                    <div class="textBlock">
+                    <div class="textBlock col-12">
                       <p class="title">Бухгалтерское сопровождение фирм</p>
                       <p class="description">За Вашим предприятием будут закреплены конкретные специалисты, которые полностью войдут в курс хозяйственной деятельности Вашей организации, будут внимательно относится к Вашим пожеланиям и быстро реагировать на все Ваши запросы.</p>
                     </div><a class="button buttonCallback">Подробнее</a>
@@ -458,17 +460,26 @@
       <div class="row">
         <div class="container">
           <div class="row">
-            <div class="col-11 col-md-6">
+            <h2 class="col-12">Мы специализируемся <br/>на полном сопровождении «под ключ»</h2>
+          </div>
+          <div class="row underKeyFormWrap">
+            <div class="col-12 col-md-6">
               <div class="textBlock">
                 <p class="text">Мы специализируемся на полном сопровождении "под ключ". Вам больше не нужно переплачивать штатным бухгалтерам. Как правило стоимость обслуживания в нашей компании на поверку оказывается значительно ниже, чем расходы на штатных бухгалтеров. Отправьте заявку на персональный расчет обслуживания вашей компании и убедитесь в этом сами!</p>
               </div>
             </div>
-            <div class="col-11 col-md-5 ml-md-1">
+            <div class="col-12 col-md-5 ml-md-auto">
               <div class="formBlock">
                 <form>
-                  <input type="text" name="name" placeholder="Ваше имя"/>
-                  <input type="email" name="email" placeholder="Ваш E-mail"/>
-                  <button class="button buttonCallback" type="submit">Отправить заявку</button>
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Ваше имя"/>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="Ваш E-mail"/>
+                  </div>
+                  <div class="form-group">
+                    <button class="button buttonCallback" type="submit">Отправить заявку</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -476,7 +487,264 @@
         </div>
       </div>
     </section>
-    <footer></footer>
+    <section class="container reviewsSliderBlock">
+      <div class="row">
+        <h2 class="col-12">отзывы</h2>
+      </div>
+      <div class="row">
+        <div class="reviewsSliderWrap col-xl-10 col-lg-10 col-md-10 col-sm-10 col-8 mx-auto">
+          <div class="reviewsSlider owl-carousel">
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide1.png"/></div>
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide2.png"/></div>
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide3.png"/></div>
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide4.png"/></div>
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide1.png"/></div>
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide2.png"/></div>
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide3.png"/></div>
+            <div class="item"><img class="img-fluid" src="/assets/images/reviewsSlide4.png"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="reviewsSliderDescriptionWrap col-xl-10 col-lg-10 col-md-10 col-sm-11 col-11 mx-auto">
+          <div class="reviewsSliderDescription owl-carousel">
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 1</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 2</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 3</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 4</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 5</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 6</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 7</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+            <div class="item">
+              <p class="name">Ольга Николаева,</p>
+              <p class="company">ООО «Кока Кола» 8</p>
+              <p class="date">12.07.2017</p>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid priceSlideBlockWrap">
+      <div class="row">
+        <h2 class="col-12">Цены</h2>
+      </div>
+      <div class="row">
+        <div class="container-fluid priceSlideBlock">
+          <div class="row">
+            <div class="container">
+              <div class="row">
+                <div class="priceSlideWRap col-12">
+                  <div class="priceSlide owl-carousel">
+                    <div class="item">
+                      <div class="titleBlock">
+                        <p class="title">ОСНО/УСНО</p>
+                        <p class="descr">(доходы минус расходы)</p>
+                      </div>
+                      <div class="activity">
+                        <p class="title">Вид деятельности</p>
+                        <p class="value">Услуги</p>
+                      </div>
+                      <div class="operations">
+                        <p class="title">Кол-во операций по банку, руб./мес.</p>
+                        <select>
+                          <option>до 10</option>
+                          <option>до 20</option>
+                          <option>до 30</option>
+                        </select>
+                      </div>
+                      <div class="price">
+                        <p class="title">Цена, руб.</p>
+                        <p class="value">15 000 </p>
+                      </div>
+                      <p class="more"><a class="button buttonCallback">Подробнее</a></p>
+                    </div>
+                    <div class="item">
+                      <div class="titleBlock">
+                        <p class="title">ЕНВД</p>
+                      </div>
+                      <div class="activity">
+                        <p class="title">Вид деятельности</p>
+                        <p class="value">Любой</p>
+                      </div>
+                      <div class="operations">
+                        <p class="title">Кол-во операций по банку, руб./мес.</p>
+                        <select>
+                          <option>до 10</option>
+                          <option>до 20</option>
+                          <option>до 30</option>
+                        </select>
+                      </div>
+                      <div class="price">
+                        <p class="title">Цена, руб.</p>
+                        <p class="value">10 000 </p>
+                      </div>
+                      <p class="more"><a class="button buttonCallback">Подробнее</a></p>
+                    </div>
+                    <div class="item">
+                      <div class="titleBlock">
+                        <p class="title">УСНО</p>
+                        <p class="descr">(6% с дохода)</p>
+                      </div>
+                      <div class="activity">
+                        <p class="title">Вид деятельности</p>
+                        <p class="value">Любой</p>
+                      </div>
+                      <div class="operations">
+                        <p class="title">Кол-во операций по банку, руб./мес.</p>
+                        <select>
+                          <option>до 10</option>
+                          <option>до 20</option>
+                          <option>до 30</option>
+                        </select>
+                      </div>
+                      <div class="price">
+                        <p class="title">Цена, руб.</p>
+                        <p class="value">10 000 </p>
+                      </div>
+                      <p class="more"><a class="button buttonCallback">Подробнее</a></p>
+                    </div>
+                    <div class="item">
+                      <div class="titleBlock">
+                        <p class="title">УСНО</p>
+                        <p class="descr">(6% с дохода)</p>
+                      </div>
+                      <div class="activity">
+                        <p class="title">Вид деятельности</p>
+                        <p class="value">Любой</p>
+                      </div>
+                      <div class="operations">
+                        <p class="title">Кол-во операций по банку, руб./мес.</p>
+                        <select>
+                          <option>до 10</option>
+                          <option>до 20</option>
+                          <option>до 30</option>
+                        </select>
+                      </div>
+                      <div class="price">
+                        <p class="title">Цена, руб.</p>
+                        <p class="value">10 000 </p>
+                      </div>
+                      <p class="more"><a class="button buttonCallback">Подробнее</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid bottomFormBLock">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="bottomFormWrap d-flex flex-column col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 mx-auto align-items-center">
+              <h2>мы всегда готовы помочь</h2>
+              <p class="description">Мы всегда готовы помочь. Оставьте свой телефон и мы перезвоним вам, чтобы  бесплатно проконсультировать.</p>
+              <form>
+                <div class="form-group">
+                  <input class="form-control" placeholder="+7(999)-999-999"/>
+                </div>
+                <div class="form-group">
+                  <button class="button buttonCallback">Получить консультацию</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="row footerWrap">
+            <div class="footerInfoBlock col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 d-flex flex-column align-items-md-start align-items-sm-center align-items-center justify-content-between">
+              <div class="logo"><a><img src="/assets/images/logoWhite.png"/></a></div>
+              <div class="contactInfo">
+                <p class="phone">+7 (812) <span>385-58-50</span></p>
+                <p class="address">ул. Большая Посадская, д. 16</p>
+              </div>
+              <ul class="contactButtons d-md-flex d-none">
+                <li class="contactButtonItem"><a class="button buttonWhite buttonPhone"> </a></li>
+                <li class="contactButtonItem"><a class="button buttonWhite buttonTelegram"> </a></li>
+              </ul>
+              <form class="searchBlock d-lg-none d-md-block d-block">
+                <input placeholder="Поиск"/><a class="searchButton"></a>
+              </form>
+            </div>
+            <div class="footerMenuBlock col-xl-8 col-lg-7 col-md-7 d-md-flex d-none ml-auto flex-column align-items-end">
+              <ul class="footerMenu">
+                <li class="footerMenuItem"> <a class="footerMenuItemLink">Бухгалтерские услуги</a>
+                  <ul class="footerMenuInner">
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Бухгалтерское сопровождение фирм</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Восстановление учета</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Передача отчетности</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Сверка с МИФНС, ПФ и ФСС</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Нулевая отчетсность</a></li>
+                  </ul>
+                </li>
+                <li class="footerMenuItem"> <a class="footerMenuItemLink">Юридические услуги</a>
+                  <ul class="footerMenuInner">
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Регистрация юридических лиц</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Открытие р/с</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Выписка из ЕГРЮЛ</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Регистриция филиалов</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Реорганизация предприятия</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Ликвидация юридического лица</a></li>
+                  </ul>
+                </li>
+                <li class="footerMenuItem"> <a class="footerMenuItemLink">Налоговое консультирование</a>
+                  <ul class="footerMenuInner">
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Декларация 3-НДФЛ</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Камеральная проверка</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Выездная налоговая проверка</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="searchBlock d-lg-block d-none">
+                <input placeholder="Поиск"/><a class="searchButton"></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

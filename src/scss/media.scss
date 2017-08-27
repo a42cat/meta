@@ -3,6 +3,11 @@
 
 //Smartphone device
 @media (max-width: 575px) {
+	section {
+		h2 {
+			font-size:20px!important;
+		}
+	}
 	header {
 		.headerSubMenu {
 			.headerSubMenuItem {
@@ -117,6 +122,49 @@
 }
 
 @media (max-width: 767px) {
+	.priceSlideBlockWrap {
+		.priceSlideBlock {
+			.priceSlideWRap {
+				.priceSlide {
+					.owl-stage-outer {
+						.owl-stage {
+							.owl-item {
+								filter:blur(0)!important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.reviewsSliderBlock {
+		.reviewsSliderWrap {
+			.reviewsSlider {
+				.owl-item {
+					.item {
+						img {
+							filter:grayscale(0%)!important;
+						}
+					}
+				}
+			}
+		}
+		.reviewsSliderDescription {
+			.owl-item {
+				.item {
+					.name {
+						text-align:center;
+					}
+					.company {
+						text-align:center;
+					}
+					.date {
+						text-align:center;
+					}
+				}
+			}
+		}
+	}
 	.servicesTabsBlock {
 		.nav-tabs {
 			display: none!important;
@@ -181,6 +229,7 @@
 				.item {
 					img {
 						max-width:180px!important;
+						margin:0;
 					}
 					.text {
 						opacity:1!important;
@@ -220,9 +269,47 @@
 			}
 		}
 	}
+	footer {
+		.footerWrap {
+			.searchBlock {
+				text-align: center;
+				input {
+					
+				}
+			}
+			.footerInfoBlock {
+				.logo {
+					text-align:center;
+				}
+				.contactInfo {
+					text-align:center;	
+				}
+			}
+			.footerMenuBlock {
+
+			}
+		}
+	}
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+	footer {
+		.footerWrap {
+			.searchBlock {
+				text-align: right;
+			}
+			.footerInfoBlock {
+			}
+			.footerMenuBlock {
+				.footerMenu {
+					.footerMenuItem {
+						margin-bottom: 20px;
+						width:calc(100% / 2);
+					}
+				}
+			}
+		}
+	}
 	.headerBanner {
 		padding-top: 75px;
 		padding-bottom: 240px;
@@ -331,4 +418,17 @@
 	}
 }
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	footer {
+		.footerWrap {
+			.footerInfoBlock {}
+			.footerMenuBlock {
+				.footerMenu {
+					.footerMenuItem {
+						width:calc(100% / 3);
+					}
+				}
+			}
+		}
+	}
+}

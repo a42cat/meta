@@ -1,2 +1,63 @@
 mixin footer()
-	footer
+	footer.container-fluid
+		.row
+			.container
+				.row.footerWrap
+					.footerInfoBlock.col-xl-3.col-lg-3.col-md-4.col-sm-12.col-12.d-flex.flex-column.align-items-md-start.align-items-sm-center.align-items-center.justify-content-between
+						.logo
+							a
+								img(src="/assets/images/logoWhite.png")
+						.contactInfo
+							p.phone +7 (812) 
+								span 385-58-50
+							p.address ул. Большая Посадская, д. 16
+						ul.contactButtons.d-md-flex.d-none
+							li.contactButtonItem
+								a.button.buttonWhite.buttonPhone 
+							li.contactButtonItem
+								a.button.buttonWhite.buttonTelegram 
+						form.searchBlock.d-lg-none.d-md-block.d-block
+							input(placeholder="Поиск")
+							a.searchButton
+					.footerMenuBlock.col-xl-8.col-lg-7.col-md-7.d-md-flex.d-none.ml-auto.flex-column.align-items-end
+						ul.footerMenu
+							li.footerMenuItem 
+								a.footerMenuItemLink Бухгалтерские услуги
+								ul.footerMenuInner
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Бухгалтерское сопровождение фирм
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Восстановление учета
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Передача отчетности
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Сверка с МИФНС, ПФ и ФСС
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Нулевая отчетсность
+							li.footerMenuItem 
+								a.footerMenuItemLink Юридические услуги
+								ul.footerMenuInner
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Регистрация юридических лиц
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Открытие р/с
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Выписка из ЕГРЮЛ
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Регистриция филиалов
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Реорганизация предприятия
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Ликвидация юридического лица
+							li.footerMenuItem 
+								a.footerMenuItemLink Налоговое консультирование
+								ul.footerMenuInner
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Декларация 3-НДФЛ
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Камеральная проверка
+									li.footerMenuInnerItem
+										a.footerMenuInnerItemLink Выездная налоговая проверка
+						form.searchBlock.d-lg-block.d-none
+							input(placeholder="Поиск")
+							a.searchButton

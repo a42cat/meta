@@ -4,7 +4,8 @@ mixin header()
 			.container.headerTopMenuWrap
 				.row.align-items-center
 					.col-4.col-xl-2.col-lg-2.col-md-2.logo
-						img.img-fluid(src="assets/images/logoColor.png")
+						a(href="/")
+							img.img-fluid(src="assets/images/logoColor.png")
 					.col-xl-5.col-lg-5.col-md-8.d-none.d-md-flex
 						ul.headerTopMenu
 							li.headerTopMenuItem
@@ -20,8 +21,8 @@ mixin header()
 							li.headerSubMenuItem.d-md-none.d-xl-none.d-lg-none
 								a.headerSubMenuItemLink.button.headerDropdownMenuButton#headerDropdownMenuButton
 								ul.headerDropdownMenuWrap
-									li.headerDropdiwnMenuItemMain
-										a.headerDropdiwnMenuItemMainLink бухгалтерские услуги
+									li.headerDropDownMenuItemMain
+										a.headerDropDownMenuItemMainLink бухгалтерские услуги
 										ul.headerDropdownMenuInner
 											li.headerDropdownMenuInnerItem
 												a.headerDropdownMenuInnerItemLink Бухгалтерское сопровождение фирм
@@ -33,8 +34,8 @@ mixin header()
 												a.headerDropdownMenuInnerItemLink Сверка с МИФНС, ПФ и ФСС
 											li.headerDropdownMenuInnerItem
 												a.headerDropdownMenuInnerItemLink нулевая отчетность
-									li.headerDropdiwnMenuItemMain
-										a.headerDropdiwnMenuItemMainLink налоговое консультирование
+									li.headerDropDownMenuItemMain
+										a.headerDropDownMenuItemMainLink налоговое консультирование
 										ul.headerDropdownMenuInner
 											li.headerDropdownMenuInnerItem
 												a.headerDropdownMenuInnerItemLink Декларация 3-НДФЛ
@@ -42,8 +43,8 @@ mixin header()
 												a.headerDropdownMenuInnerItemLink Камеральные проверки
 											li.headerDropdownMenuInnerItem
 												a.headerDropdownMenuInnerItemLink Выездная налоговоя проверка
-									li.headerDropdiwnMenuItemMain
-										a.headerDropdiwnMenuItemMainLink дополнительные услуги
+									li.headerDropDownMenuItemMain
+										a.headerDropDownMenuItemMainLink дополнительные услуги
 										ul.headerDropdownMenuInner
 											li.headerDropdownMenuInnerItem
 												a.headerDropdownMenuInnerItemLink.subCat Онлайн услуги
@@ -92,7 +93,8 @@ mixin header()
 					.container
 						.row.align-items-center
 							.d-none.logo
-								img.img-fluid(src="assets/images/logoWhite.png")
+								a(href="/")
+									img.img-fluid(src="assets/images/logoWhite.png")
 							.d-none
 								ul.headerFixedMenuLeft
 									li.headerFixedMenuLeftItem
