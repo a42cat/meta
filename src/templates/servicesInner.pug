@@ -1,0 +1,65 @@
+include mixins/head.pug
+include mixins/header.pug
+include mixins/breadCrumbs.pug
+include mixins/callQuestions.pug
+include mixins/priceSlide.pug
+include mixins/experts.pug
+include mixins/advantages.pug
+include mixins/orderWorkForm.pug
+include mixins/reviewsSlider.pug
+include mixins/bottomForm.pug
+include mixins/footer.pug
+include mixins/scripts.pug
+
+doctype 
+html(lang="ru")
+	+head()
+	body
+		+header(0)
+		section.container-fluid.content
+			.row
+				.container
+					.row
+						.col-lg-9.col-md-9.col-12.leftColumn
+							+breadCrumbsBlock()
+							h1.col-12 Бухгалтерское обслуживание и сопровождение
+							p Потребность в восстановлении учета может возникнуть при утере документов, уходе бухгалтера, при обнаружении ошибок в ведении учета прошлых периодов или при его отсутствии, а так же при желании руководителя, который в силу каких-либо причин считает, что бухгалтерский учет велся или ведется не надлежащим образом.
+							p Неквалифицированное ведение учета приводит к ряду неприятностей грозящих Вашей организации. Если в налоговую инспекцию не предоставляется бухгалтерская и налоговая отчетность, то в первую очередь налоговые органы арестовывают банковские счета, что приводит к приостановлению деятельности фирмы. Затем на руководителя и организацию накладываются штрафы. При этом разблокирование счетов не произойдет до тех пор, пока руководитель ЛИЧНО не придет в ИФНС получать протокол об административном штрафе. Если организацией не ведется учет, либо отсутствуют первичные документы, то в случае налоговой проверки будут дополнительно начислены налоги и пени, а так же штрафные санкции. И это лишь малая часть того, с чем Вам и Вашей организации придется столкнуться. Во избежание данных проблем наша фирма предлагает услугу по восстановлению бухгалтерского и налогового учета.
+							.row
+								.orderWorkWrap
+									h2.col-12 Порядок работ
+									ol.orderWork.d-flex.flex-wrap
+										li.orderWorkItem.col-md-6.col-sm-11.col-11.mx-auto Сбор и обработка существующих первичных документов
+										li.orderWorkItem.col-md-6.col-sm-11.col-11.mx-auto Восстановление утраченной, либо своевременно не оформленной первичной документации
+										li.orderWorkItem.col-md-6.col-sm-11.col-11.mx-auto Восстановление баланса за истекшие периоды и сдача в соответствующие инстанции
+										li.orderWorkItem.col-md-6.col-sm-11.col-11.mx-auto Создание заново, либо изменение имеющейся электронной базы данных бухгалтерского учета
+									+orderWorkFormBlock('Не смотря на существование общего порядка работы, каждый случай индивидуален. Свяжитесь с нами и наши специалисты бесплатно проконсультируют вас.', false)
+						.col-lg-3.col-md-3.d-md-block.d-none.rightColumn
+							+callQuestionsBlock()
+							.usefulBlock
+								p.title Может быть полезно
+								ul.usefulList
+									li.usefulListItem
+										a.usefulListItemLink Бухгалтерское сопровождение фирм
+									li.usefulListItem
+										a.usefulListItemLink Восстановление учета
+									li.usefulListItem
+										a.usefulListItemLink Пересдача отчетности
+									li.usefulListItem
+										a.usefulListItemLink Сверка МИФСН, ПФ и ФСС
+							.busCardBlock
+								img.img-fluid(src="/assets/images/busCard.png")
+								a.button.buttonCallback Получить визитку
+		+priceSlideBlock()
+		section.container-fluid.callQuestionsWrap
+			.row
+				.container
+					.row
+						.d-md-none.d-sm-none.col-sm-11.col-11.mx-auto
+							+callQuestionsBlock()
+		+advantagesBlock()
+		+expertsBlock()
+		+reviewsSliderBlock()
+		+bottomFormBLock()
+		+footer()
+		+scripts()

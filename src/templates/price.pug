@@ -1,0 +1,97 @@
+include mixins/head.pug
+include mixins/header.pug
+include mixins/breadCrumbs.pug
+include mixins/callQuestions.pug
+include mixins/priceSlide.pug
+include mixins/reviewsSlider.pug
+include mixins/bottomForm.pug
+include mixins/footer.pug
+include mixins/scripts.pug
+
+doctype 
+html(lang="ru")
+	+head()
+	body
+		+header(0)
+		section.container-fluid.content
+			.row
+				.container
+					.row
+						.col-lg-9.col-md-9.col-12.leftColumn
+							+breadCrumbsBlock()
+							h1.col-12 Бухгалтерское обслуживание и сопровождение
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. 
+							+priceSlideBlock()
+							.priceAddBlockWrap
+								h2.col-12 дополнительно
+								.priceAddBlock
+									.priceAddBlockHead.d-flex
+										.headCol.col-md-4.col-4 Услуга
+										.headCol.col-md-4.col-4 Примечание
+										.headCol.col-md-4.col-4 Цена, руб.
+									.priceAddBlockBody.d-flex.flex-column
+										.priceAddBlockBodyitem.d-flex.align-items-center.flex-md-row.flex-column
+											.bodyCol.title.col-md-4.col-12 Помощь начинающим бухгалтерам
+											.bodyCol.descr.col-md-4.col-12 с заключением договора на консультационное обслуживание
+											.bodyCol.price.col-md-4.col-12 от
+												span 15 000
+												| в квартал
+										.priceAddBlockBodyitem.d-flex.align-items-center.flex-md-row.flex-column
+											.bodyCol.title.col-md-4.col-12 Формирование базы данных в 1С
+											.bodyCol.descr.col-md-4.col-12 один раз при заключении договора на бухгалтерское обслуживание (если это необходимо)
+											.bodyCol.price.col-md-4.col-12 от
+												span 3 000
+										.priceAddBlockBodyitem.d-flex.align-items-center.flex-md-row.flex-column
+											.bodyCol.title.col-md-4.col-12 Консультирование сопровождение сделки/договора
+											.bodyCol.descr.col-md-4.col-12
+											.bodyCol.price.col-md-4.col-12 от
+												span 2 000
+										.priceAddBlockBodyitem.d-flex.align-items-center.flex-md-row.flex-column
+											.bodyCol.title.col-md-4.col-12 Восстановление бухгалтерского учета
+											.bodyCol.descr.col-md-4.col-12 стоимость зависит от периода восстановления документов и деятельности
+											.bodyCol.price.col-md-4.col-12 от
+												span 5 000
+										.priceAddBlockBodyitem.d-flex.align-items-center.flex-md-row.flex-column
+											.bodyCol.title.col-md-4.col-12 Выезд специалиста к клиенту
+											.bodyCol.descr.col-md-4.col-12 
+											.bodyCol.price.col-md-4.col-12 от
+												span 2 000
+												| в час
+										.priceAddBlockBodyitem.d-flex.align-items-center.flex-md-row.flex-column
+											.bodyCol.title.col-md-4.col-12 Подготовка персонифицированного учета
+											.bodyCol.descr.col-md-4.col-12 до 10 сотрудников
+												br
+												| каждый последующий
+											.bodyCol.price.col-md-4.col-12 
+												span 1500/чел
+												br
+												span 500/чел
+										.priceAddBlockBodyitem.d-flex.align-items-center.flex-md-row.flex-column
+											.bodyCol.title.col-md-4.col-12 Ведение зарплаты и кадров
+											.bodyCol.descr.col-md-4.col-12 до 10 сотрудников
+												br
+												| каждый последующий
+											.bodyCol.price.col-md-4.col-12 
+												span 1500/чел
+												br
+												span 500/чел
+						.col-lg-3.col-md-3.d-md-block.d-none.rightColumn
+							+callQuestionsBlock()
+							.usefulBlock
+								p.title Может быть полезно
+								ul.usefulList
+									li.usefulListItem
+										a.usefulListItemLink Бухгалтерское сопровождение фирм
+									li.usefulListItem
+										a.usefulListItemLink Восстановление учета
+									li.usefulListItem
+										a.usefulListItemLink Пересдача отчетности
+									li.usefulListItem
+										a.usefulListItemLink Сверка МИФСН, ПФ и ФСС
+							.busCardBlock
+								img.img-fluid(src="/assets/images/busCard.png")
+								a.button.buttonCallback Получить визитку
+		+reviewsSliderBlock()
+		+bottomFormBLock()
+		+footer()
+		+scripts()

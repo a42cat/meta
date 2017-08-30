@@ -1,0 +1,65 @@
+include mixins/head.pug
+include mixins/header.pug
+include mixins/breadCrumbs.pug
+include mixins/callQuestions.pug
+include mixins/priceSlide.pug
+include mixins/experts.pug
+include mixins/advantages.pug
+include mixins/reviewsSlider.pug
+include mixins/bottomForm.pug
+include mixins/footer.pug
+include mixins/scripts.pug
+
+doctype 
+html(lang="ru")
+	+head()
+	body
+		+header(0)
+		section.container-fluid.content
+			.row
+				.container
+					.row
+						.col-lg-9.col-md-9.col-12.leftColumn
+							+breadCrumbsBlock()
+							h1.col-12 Бухгалтерское обслуживание и сопровождение
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+							ul.categoryList.row
+								li.categoryListItem.col-xl-3.col-lg-3.col-md-4.col-sm-6.col-12
+									a.button.categoryListItemLink Бухгалтерское сопровождение фирм
+								li.categoryListItem.col-xl-3.col-lg-3.col-md-4.col-sm-6.col-12
+									a.button.categoryListItemLink Восстановление учета
+								li.categoryListItem.col-xl-3.col-lg-3.col-md-4.col-sm-6.col-12
+									a.button.categoryListItemLink Пересдача отчетности
+								li.categoryListItem.col-xl-3.col-lg-3.col-md-4.col-sm-6.col-12
+									a.button.categoryListItemLink Сверка МИФСН, ПФ и ФСС
+								li.categoryListItem.col-xl-3.col-lg-3.col-md-4.col-sm-6.col-12
+									a.button.categoryListItemLink Нулевая отчетность
+						.col-lg-3.col-md-3.d-md-block.d-none.rightColumn
+							+callQuestionsBlock()
+							.usefulBlock
+								p.title Может быть полезно
+								ul.usefulList
+									li.usefulListItem
+										a.usefulListItemLink Бухгалтерское сопровождение фирм
+									li.usefulListItem
+										a.usefulListItemLink Восстановление учета
+									li.usefulListItem
+										a.usefulListItemLink Пересдача отчетности
+									li.usefulListItem
+										a.usefulListItemLink Сверка МИФСН, ПФ и ФСС
+							.busCardBlock
+								img.img-fluid(src="/assets/images/busCard.png")
+								a.button.buttonCallback Получить визитку
+		+priceSlideBlock()
+		section.container-fluid.callQuestionsWrap
+			.row
+				.container
+					.row
+						.d-md-none.d-sm-none.col-sm-11.col-11.mx-auto
+							+callQuestionsBlock()
+		+advantagesBlock()
+		+expertsBlock()
+		+reviewsSliderBlock()
+		+bottomFormBLock()
+		+footer()
+		+scripts()

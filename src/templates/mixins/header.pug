@@ -1,4 +1,4 @@
-mixin header()
+mixin header(hb)
 	header.container-fluid
 		.row
 			.container.headerTopMenuWrap
@@ -238,6 +238,7 @@ mixin header()
 																a.dropDownMenuSectionsListItemLink Почтово-секретарское обслуживание
 															li.dropDownMenuSectionsListItem
 																a.dropDownMenuSectionsListItemLink Курьерские услуги
+		if hb == 1
 			.container.headerBanner
 				.row
 					.col-xl-3.col-lg-4.ml-lg-auto.mr-lg-0.col-md-5.ml-md-auto.mr-md-auto.d-none.d-md-block.headerBannerPhoto

@@ -1,0 +1,79 @@
+include mixins/head.pug
+include mixins/header.pug
+include mixins/breadCrumbs.pug
+include mixins/callQuestions.pug
+include mixins/bottomForm.pug
+include mixins/footer.pug
+include mixins/scripts.pug
+
+doctype 
+html(lang="ru")
+	+head()
+	body
+		+header(0)
+		section.container-fluid.content
+			.row
+				.container
+					.row
+						.col-lg-9.col-md-9.col-12.leftColumn
+							+breadCrumbsBlock()
+							h1.col-12 Бухгалтерское обслуживание и сопровождение
+							.newsInnerWrap
+								.newsInnerHead.row
+									.imgBlock.col-lg-4.col-md-8.col-sm-10.col-12.mx-auto
+										img.img-fluid(src="/assets/images/newsImg.png")
+									.textBlock.col-lg-8.col-md-12.col-sm-12.col-12.ms-auto
+										p.date 12.07.2017
+										p.text Лид Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. 
+								.newsInnerBody
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+
+									blockquote «Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.»
+									span Иван Иванов, МИД
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. 
+									p.author Автор статьи Ирина Иванова
+								.newsInnerPagenWrap.row
+									h2.col-12 Другие статьи
+									.newsInnerPagenSlider.owl-carousel.col-8.col-sm-8.col-md-10.col-lg-10.mx-auto
+										.item
+											.imgBlock.d-md-block.d-none
+												img.img-fluid(src="/assets/images/newsImg.png")
+											p.date 21.07.2017
+											p.title Заголовок новости одна строка
+										.item
+											.imgBlock.d-md-block.d-none
+												img.img-fluid(src="/assets/images/newsImg.png")
+											p.date 21.07.2017
+											p.title Заголовок новости одна строка
+										.item
+											.imgBlock.d-md-block.d-none
+												img.img-fluid(src="/assets/images/newsImg.png")
+											p.date 21.07.2017
+											p.title Заголовок новости одна строка
+										.item
+											.imgBlock.d-md-block.d-none
+												img.img-fluid(src="/assets/images/newsImg.png")
+											p.date 21.07.2017
+											p.title Заголовок новости одна строка
+						.col-lg-3.col-md-3.d-md-block.d-none.rightColumn
+							+callQuestionsBlock()
+							.usefulBlock
+								p.title Может быть полезно
+								ul.usefulList
+									li.usefulListItem
+										a.usefulListItemLink Бухгалтерское сопровождение фирм
+									li.usefulListItem
+										a.usefulListItemLink Восстановление учета
+									li.usefulListItem
+										a.usefulListItemLink Пересдача отчетности
+									li.usefulListItem
+										a.usefulListItemLink Сверка МИФСН, ПФ и ФСС
+							.busCardBlock
+								img.img-fluid(src="/assets/images/busCard.png")
+								a.button.buttonCallback Получить визитку
+		+bottomFormBLock()
+		+footer()
+		+scripts()

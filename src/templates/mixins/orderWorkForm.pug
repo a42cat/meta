@@ -1,0 +1,13 @@
+mixin orderWorkFormBlock(title,text,addClass)
+	.orderWorkFormWrap(class=addClass)
+		if title
+			p.col-sm-10.col-12.mx-auto.title= title
+		if text
+			p.col-12.text= text
+		form.d-flex.flex-md-row.flex-sm-column.flex-column
+			.form-group.col-md-4.col-sm-11.col-12.mx-auto
+				input(type="text" placeholder="Ваше имя")
+			.form-group.col-md-4.col-sm-11.col-12.mx-auto
+				input(type="tel" placeholder="Ваш телефон")
+			.form-group.col-md-4.col-sm-11.col-12.mx-auto
+				button.button.buttonCallback Получить консультацию

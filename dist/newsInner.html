@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>test</title>
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="Keywords" lang="ru" content=""/>
+    <meta name="Description" lang="ru" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="author" href="phantomkemerovo@mail.ru"/>
+    <link rel="stylesheet" href="assets/css/normolize.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"/>
+    <!--link(rel="stylesheet" href="css/jQueryFormStyler.css")-->
+    <!--link(rel="stylesheet" href="css/font-awesome.min.css")-->
+    <!--link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")-->
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/fonts.css"/>
+    <link rel="stylesheet" href="assets/css/media.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="container headerTopMenuWrap">
+          <div class="row align-items-center">
+            <div class="col-4 col-xl-2 col-lg-2 col-md-2 logo"><a href="/"><img class="img-fluid" src="assets/images/logoColor.png"/></a></div>
+            <div class="col-xl-5 col-lg-5 col-md-8 d-none d-md-flex">
+              <ul class="headerTopMenu">
+                <li class="headerTopMenuItem"><a class="headerTopMenuItemLink">О компании</a></li>
+                <li class="headerTopMenuItem"><a class="headerTopMenuItemLink">Цены</a></li>
+                <li class="headerTopMenuItem"><a class="headerTopMenuItemLink">Новости</a></li>
+                <li class="headerTopMenuItem"><a class="headerTopMenuItemLink">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-8 col-xl-2 col-lg-auto col-md-2">
+              <ul class="headerSubMenu d-flex justify-content-sm-end justify-content-md-start justify-content-end">
+                <li class="headerSubMenuItem d-md-none d-xl-none d-lg-none"><a class="headerSubMenuItemLink button headerDropdownMenuButton" id="headerDropdownMenuButton"></a>
+                  <ul class="headerDropdownMenuWrap">
+                    <li class="headerDropDownMenuItemMain"><a class="headerDropDownMenuItemMainLink">бухгалтерские услуги</a>
+                      <ul class="headerDropdownMenuInner">
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Бухгалтерское сопровождение фирм</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Восстановление учета</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Передача отчетности</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Сверка с МИФНС, ПФ и ФСС</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">нулевая отчетность</a></li>
+                      </ul>
+                    </li>
+                    <li class="headerDropDownMenuItemMain"><a class="headerDropDownMenuItemMainLink">налоговое консультирование</a>
+                      <ul class="headerDropdownMenuInner">
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Декларация 3-НДФЛ</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Камеральные проверки</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Выездная налоговоя проверка</a></li>
+                      </ul>
+                    </li>
+                    <li class="headerDropDownMenuItemMain"><a class="headerDropDownMenuItemMainLink">дополнительные услуги</a>
+                      <ul class="headerDropdownMenuInner">
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink subCat">Онлайн услуги</a>
+                          <ul class="headerDropdownMenuInnerSub">
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Форма заказа для подготовки сдачи нулевой отчетности</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Форма для регистрации ООО/ИП</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Калькулятор услуг</a></li>
+                          </ul>
+                        </li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink subCat">Юридические услуги</a>
+                          <ul class="headerDropdownMenuInnerSub">
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Регистрация юридических лиц</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Открытие р/с</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Выписка из ЕГРЮЛ</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Внесение изменений в ЕГРЮЛ</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Регистрация филиалов</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Реорганизация предприятий</a></li>
+                            <li class="headerDropdownMenuInnerSubItem"><a class="headerDropdownMenuInnerSubItemLink">Ликвидация юр. лица</a></li>
+                          </ul>
+                        </li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Для начинающих предпринимателей</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Кадровое делопроизводство</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Почтово-секретарское обслуживание</a></li>
+                        <li class="headerDropdownMenuInnerItem"><a class="headerDropdownMenuInnerItemLink">Курьерские услуги</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="headerSubMenuItem"><a class="headerSubMenuItemLink button headerPhoneButton"></a></li>
+                <li class="headerSubMenuItem"><a class="headerSubMenuItemLink button headerTelegramButton"></a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-lg-auto d-none d-lg-flex flex-column headerContactBlock text-right">
+              <p class="phone">+7 (812)<span> 685-58-50</span></p>
+              <p class="address">ул. Большая Посадская, д. 16</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid headerFixedLine d-none d-md-block">
+          <div class="row">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="d-none logo"><a href="/"><img class="img-fluid" src="assets/images/logoWhite.png"/></a></div>
+                <div class="d-none">
+                  <ul class="headerFixedMenuLeft">
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">О компании</a></li>
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">Новости</a></li>
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">Цена</a></li>
+                    <li class="headerFixedMenuLeftItem"><a class="headerFixedMenuLeftItemLink">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="col-12">
+                  <ul class="headerFixedMenuRight justify-content-between">
+                    <li class="headerFixedMenuRightItem"><a class="headerFixedMenuRightItemLink">Бухгалтерские услуги</a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Бухгалтерское сопровождение фирм</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Восстановление учета</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Передача отчетности</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Сверка с МИФНС, ПФ и ФСС</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">нулевая отчетность</a></li>
+                      </ul>
+                    </li>
+                    <li class="headerFixedMenuRightItem"><a class="headerFixedMenuRightItemLink">налоговое консультирование</a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Декларация 3-НДФЛ</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Камеральные проверки</a></li>
+                        <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выездная налоговоя проверка</a></li>
+                      </ul>
+                    </li>
+                    <li class="headerFixedMenuRightItem"><a class="headerFixedMenuRightItemLink">дополнительные услуги</a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Юридические услуги</a>
+                          <ul class="dropDownMenuSectionsList">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация юридических лиц</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Открытие р/с</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выписка из ЕГРЮЛ</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Внесение изменений в ЕГРЮЛ</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация филиалов</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Реорганизация предприятий</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Ликвидация юр. лица</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Онлайн услуги</a>
+                          <ul class="dropDownMenuSectionsList">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма заказа для подготовки сдачи нулевой	отчетности</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма для регистрации ООО/ИП</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Калькулятор услуг</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSections">
+                          <ul class="dropDownMenuSectionsList">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Для начинающих предпринимателей</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Кадровое делопроизводство</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Почтово-секретарское обслуживание</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Курьерские услуги</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-none">
+                  <ul class="headerFixedSubMenu justify-content-end">
+                    <li class="headerFixedSubMenuItem"><a class="button buttonWhite headerFixedSubMenuItemLink headerFixedPhoneButton"></a></li>
+                    <li class="headerFixedSubMenuItem"><a class="button buttonWhite headerFixedSubMenuItemLink headerFixedTelegramButton"></a></li>
+                    <li class="headerFixedSubMenuItem d-xl-none"><a class="button buttonWhite headerFixedSubMenuItemLink headerFixedDropdownMenuButton" id="headerFixedDropdownMenuButton"></a>
+                      <ul class="dropDownMenu">
+                        <li class="dropDownMenuSectionsMain"><a class="dropDownMenuSectionsMainLink">бухгалтерские услуги </a>
+                          <ul class="dropDownMenu">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Бухгалтерское сопровождение фирм</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Восстановление учета</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Передача отчетности</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Сверка с МИФНС, ПФ и ФСС</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">нулевая отчетность</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSectionsMain"><a class="dropDownMenuSectionsMainLink">налоговое консультирование</a>
+                          <ul class="dropDownMenu">
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Декларация 3-НДФЛ</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Камеральные проверки</a></li>
+                            <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выездная налоговоя проверка</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropDownMenuSectionsMain"><a class="dropDownMenuSectionsMainLink">дополнительные услуги</a>
+                          <ul class="dropDownMenu">
+                            <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Юридические услуги</a>
+                              <ul class="dropDownMenuSectionsList">
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация юридических лиц</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Открытие р/с</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Выписка из ЕГРЮЛ</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Внесение изменений в ЕГРЮЛ</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Регистрация филиалов</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Реорганизация предприятий</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Ликвидация юр. лица</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropDownMenuSections"><a class="dropDownMenuSectionsLink">Онлайн услуги</a>
+                              <ul class="dropDownMenuSectionsList">
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма заказа для подготовки сдачи нулевой	отчетности</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Форма для регистрации ООО/ИП</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Калькулятор услуг</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropDownMenuSections">
+                              <ul class="dropDownMenuSectionsList">
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Для начинающих предпринимателей</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Кадровое делопроизводство</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Почтово-секретарское обслуживание</a></li>
+                                <li class="dropDownMenuSectionsListItem"><a class="dropDownMenuSectionsListItemLink">Курьерские услуги</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid content">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-12 leftColumn">
+              <div class="breadCrumbsBlock d-md-block d-none">
+                <ul class="breadCrumbs">
+                  <li class="breadCrumbsItem"><a class="breadCrumbsItemLink" href="/">Главная</a></li><i class="separator"></i>
+                  <li class="breadCrumbsItem">Бухгалтерские услуги</li>
+                </ul>
+              </div>
+              <h1 class="col-12">Бухгалтерское обслуживание и сопровождение</h1>
+              <div class="newsInnerWrap">
+                <div class="newsInnerHead row">
+                  <div class="imgBlock col-lg-4 col-md-8 col-sm-10 col-12 mx-auto"><img class="img-fluid" src="/assets/images/newsImg.png"></div>
+                  <div class="textBlock col-lg-8 col-md-12 col-sm-12 col-12 ms-auto">
+                    <p class="date">12.07.2017</p>
+                    <p class="text">Лид Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. </p>
+                  </div>
+                </div>
+                <div class="newsInnerBody">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                  <blockquote>«Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.»</blockquote><span>Иван Иванов, МИД</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. </p>
+                  <p class="author">Автор статьи Ирина Иванова</p>
+                </div>
+                <div class="newsInnerPagenWrap row">
+                  <h2 class="col-12">Другие статьи</h2>
+                  <div class="newsInnerPagenSlider owl-carousel col-8 col-sm-8 col-md-10 col-lg-10 mx-auto">
+                    <div class="item">
+                      <div class="imgBlock d-md-block d-none"><img class="img-fluid" src="/assets/images/newsImg.png"></div>
+                      <p class="date">21.07.2017</p>
+                      <p class="title">Заголовок новости одна строка</p>
+                    </div>
+                    <div class="item">
+                      <div class="imgBlock d-md-block d-none"><img class="img-fluid" src="/assets/images/newsImg.png"></div>
+                      <p class="date">21.07.2017</p>
+                      <p class="title">Заголовок новости одна строка</p>
+                    </div>
+                    <div class="item">
+                      <div class="imgBlock d-md-block d-none"><img class="img-fluid" src="/assets/images/newsImg.png"></div>
+                      <p class="date">21.07.2017</p>
+                      <p class="title">Заголовок новости одна строка</p>
+                    </div>
+                    <div class="item">
+                      <div class="imgBlock d-md-block d-none"><img class="img-fluid" src="/assets/images/newsImg.png"></div>
+                      <p class="date">21.07.2017</p>
+                      <p class="title">Заголовок новости одна строка</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 d-md-block d-none rightColumn">
+              <div class="callQuestions">
+                <div class="imgBlock"><img class="img-fluid" src="/assets/images/mainBannerPhoto.png"/></div>
+                <p class="name">Н.В. Махрова</p>
+                <p class="position">генеральный директор ООО «Бухгалтерская компания «Мета»</p>
+                <p class="link"><a class="button buttonCallbackTransparent">Задать вопрос</a></p>
+              </div>
+              <div class="usefulBlock">
+                <p class="title">Может быть полезно</p>
+                <ul class="usefulList">
+                  <li class="usefulListItem"><a class="usefulListItemLink">Бухгалтерское сопровождение фирм</a></li>
+                  <li class="usefulListItem"><a class="usefulListItemLink">Восстановление учета</a></li>
+                  <li class="usefulListItem"><a class="usefulListItemLink">Пересдача отчетности</a></li>
+                  <li class="usefulListItem"><a class="usefulListItemLink">Сверка МИФСН, ПФ и ФСС</a></li>
+                </ul>
+              </div>
+              <div class="busCardBlock"><img class="img-fluid" src="/assets/images/busCard.png"><a class="button buttonCallback">Получить визитку</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid bottomFormBLock">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="bottomFormWrap d-flex flex-column col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 mx-auto align-items-center">
+              <h2>мы всегда готовы помочь</h2>
+              <p class="description">Мы всегда готовы помочь. Оставьте свой телефон и мы перезвоним вам, чтобы  бесплатно проконсультировать.</p>
+              <form>
+                <div class="form-group">
+                  <input class="form-control" placeholder="+7(999)-999-999"/>
+                </div>
+                <div class="form-group">
+                  <button class="button buttonCallback">Получить консультацию</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="row footerWrap">
+            <div class="footerInfoBlock col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 d-flex flex-column align-items-md-start align-items-sm-center align-items-center justify-content-between">
+              <div class="logo"><a><img src="/assets/images/logoWhite.png"/></a></div>
+              <div class="contactInfo">
+                <p class="phone">+7 (812) <span>385-58-50</span></p>
+                <p class="address">ул. Большая Посадская, д. 16</p>
+              </div>
+              <ul class="contactButtons d-md-flex d-none">
+                <li class="contactButtonItem"><a class="button buttonWhite buttonPhone"> </a></li>
+                <li class="contactButtonItem"><a class="button buttonWhite buttonTelegram"> </a></li>
+              </ul>
+              <form class="searchBlock d-lg-none d-md-block d-block">
+                <input placeholder="Поиск"/><a class="searchButton"></a>
+              </form>
+            </div>
+            <div class="footerMenuBlock col-xl-8 col-lg-7 col-md-7 d-md-flex d-none ml-auto flex-column align-items-end">
+              <ul class="footerMenu">
+                <li class="footerMenuItem"> <a class="footerMenuItemLink">Бухгалтерские услуги</a>
+                  <ul class="footerMenuInner">
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Бухгалтерское сопровождение фирм</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Восстановление учета</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Передача отчетности</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Сверка с МИФНС, ПФ и ФСС</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Нулевая отчетсность</a></li>
+                  </ul>
+                </li>
+                <li class="footerMenuItem"> <a class="footerMenuItemLink">Юридические услуги</a>
+                  <ul class="footerMenuInner">
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Регистрация юридических лиц</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Открытие р/с</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Выписка из ЕГРЮЛ</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Регистриция филиалов</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Реорганизация предприятия</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Ликвидация юридического лица</a></li>
+                  </ul>
+                </li>
+                <li class="footerMenuItem"> <a class="footerMenuItemLink">Налоговое консультирование</a>
+                  <ul class="footerMenuInner">
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Декларация 3-НДФЛ</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Камеральная проверка</a></li>
+                    <li class="footerMenuInnerItem"><a class="footerMenuInnerItemLink">Выездная налоговая проверка</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="searchBlock d-lg-block d-none">
+                <input placeholder="Поиск"/><a class="searchButton"></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

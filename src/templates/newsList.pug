@@ -1,0 +1,95 @@
+include mixins/head.pug
+include mixins/header.pug
+include mixins/breadCrumbs.pug
+include mixins/callQuestions.pug
+include mixins/reviewsSlider.pug
+include mixins/bottomForm.pug
+include mixins/orderWorkForm.pug
+include mixins/footer.pug
+include mixins/scripts.pug
+
+doctype 
+html(lang="ru")
+	+head()
+	body
+		+header(0)
+		section.container-fluid.content
+			.row
+				.container
+					.row
+						.col-lg-9.col-md-9.col-12.leftColumn
+							+breadCrumbsBlock()
+							h1.col-12 Бухгалтерское обслуживание и сопровождение
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. 
+							.newsFilterWrap.row.d-md-flex.d-sm-none.d-none
+								p.title.col-3 Показать новости:
+								ul.newsFilters.col-9.d-flex.justify-content-between
+									li.newsFiltersItem
+										a.newsFiltersItemLink за прошлую неделю
+									li.newsFiltersItem
+										a.newsFiltersItemLink за эту неделю
+									li.newsFiltersItem
+										a.newsFiltersItemLink за прошлый месяц
+									li.newsFiltersItem
+										a.newsFiltersItemLink за этот месяц
+							.newsListWrap
+								ul.row.newsList.d-flex.flex-column
+									- for (var x = 0;x < 5;x++)
+										li.newsListItem.d-flex.flex-md-row.flex-sm-column.flex-column.align-items-start
+											.imgBlock.col-xl-4.col-lg-4.col-md-5.col-sm-12.col-12.mx-auto
+												img.img-fluid(src="/assets/images/newsImg.png")
+												.imgText
+													p.date 21.07.2017
+													p.title Заголовок новости одна строка
+											.textBlock.col-xl-8.col-lg-8.col-md-7.col-sm-12.col-12.mx-auto
+												p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. 
+												p.more
+													a подробнее
+							.newsPagenWrap.row
+								.newsPagen.col-md-10.col-sm-12.col-12.mx-auto.d-flex.justify-content-center.align-items-center
+									a.prev
+										img(src="/assets/images/slideLeft.png")
+									a.d-md-inline-block.d-sm-none.d-none.toStart в начало
+									ul.newsPagenList.d-flex.justify-content-center
+										li.newsPagenListItem
+											a.newsPagenListItemLink 1
+										li.newsPagenListItem.active
+											a.newsPagenListItemLink 2
+										li.newsPagenListItem
+											a.newsPagenListItemLink 3
+										li.newsPagenListItem
+											a.newsPagenListItemLink 4
+										li.newsPagenListItem
+											a.newsPagenListItemLink 5
+									a.d-md-inline-block.d-sm-none.d-none.toEnd в конец
+									a.next
+										img(src="/assets/images/slideRIght.png")
+							h2.col-12.d-md-block.d-sm-none.d-none мы консультируем бесплатно
+							+orderWorkFormBlock(false,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.','d-md-block d-sm-none d-none')
+						.col-lg-3.col-md-3.d-md-block.d-none.rightColumn
+							+callQuestionsBlock()
+							.usefulBlock
+								p.title Может быть полезно
+								ul.usefulList
+									li.usefulListItem
+										a.usefulListItemLink Бухгалтерское сопровождение фирм
+									li.usefulListItem
+										a.usefulListItemLink Восстановление учета
+									li.usefulListItem
+										a.usefulListItemLink Пересдача отчетности
+									li.usefulListItem
+										a.usefulListItemLink Сверка МИФСН, ПФ и ФСС
+							.busCardBlock
+								img.img-fluid(src="/assets/images/busCard.png")
+								a.button.buttonCallback Получить визитку
+		
+		section.container-fluid.callQuestionsWrap
+			.row
+				.container
+					.row
+						.d-md-none.d-sm-none.col-sm-11.col-11.mx-auto
+							+callQuestionsBlock()
+		+reviewsSliderBlock()
+		+bottomFormBLock()
+		+footer()
+		+scripts()
