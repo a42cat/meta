@@ -463,7 +463,6 @@ header {
 					border-top-right-radius: 25px;
 					color:#44e7cf;
 					background-color:#fff;
-					cursor: pointer;
 					&:before {
 						opacity:1;
 					}
@@ -508,7 +507,7 @@ header {
 							padding-bottom: 10px;
 							padding-top: 10px;
 							margin-top: -5px;
-							cursor:default;
+							cursor:pointer;
 						}
 						.dropDownMenuSectionsList {
 
