@@ -1,5 +1,6 @@
+include breadCrumbs.pug
 mixin header(hb)
-	header.container-fluid
+	header(class="container-fluid "+hb)
 		.row
 			.container.headerTopMenuWrap
 				.row.align-items-center
@@ -238,7 +239,7 @@ mixin header(hb)
 																a.dropDownMenuSectionsListItemLink Почтово-секретарское обслуживание
 															li.dropDownMenuSectionsListItem
 																a.dropDownMenuSectionsListItemLink Курьерские услуги
-		if hb == 1
+		if hb == 'main'
 			.container.headerBanner
 				.row
 					.col-xl-3.col-lg-4.ml-lg-auto.mr-lg-0.col-md-5.ml-md-auto.mr-md-auto.d-none.d-md-block.headerBannerPhoto
@@ -251,3 +252,13 @@ mixin header(hb)
 						p.text 326 организаций доверяют ведение налоговой отчетности и бухгалтерии нашим 
 							a сертифицированным специалистам
 						a.button.buttonCallback.align-self-lg-baseline.align-self-center Присоединиться!
+		if hb == 'about'
+			.row.aboutBanner
+				.container-fluid.headerBanner
+					.row
+						.col-lg-6.col-md-8.col-sm-10.col-12.mx-auto.headerBannerText
+							+breadCrumbsBlock()
+							p.title.text-md-center о компании
+							p.text 326 организаций доверяют ведение налоговой отчетности и бухгалтерии нашим 
+								a сертифицированным специалистам
+					

@@ -214,6 +214,27 @@ function initPriceSlider() {
 		});
 	}
 }
+function initOurWorkersSlider() {
+	var ourWorkersSlider = $('.ourWorkersSlider');
+	ourWorkersSlider.owlCarousel({
+			nav:true,
+			dots: true,
+			loop:true,
+			margin:50,
+			navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
+			responsive: {
+				0: {
+					items:1
+				},
+				768: {
+					items:3
+				},
+				992: {
+					items:4
+				}
+			}
+		});
+}
 $(document).ready(function () {
 	console.log('script run...');
 	
@@ -223,6 +244,7 @@ $(document).ready(function () {
 	initServicesSliders();
 	initReviewsSlider();
 	initPriceSlider();
+	initOurWorkersSlider();
 	initNewsInnerPagenSlider();
 	console.log('script end.');
 });

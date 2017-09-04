@@ -130,9 +130,11 @@ section {
 	}
 }
 header {
-	background-image: url(../images/headerBG.png);
 	background-size: cover;
 	background-position: center top;
+	&.main {
+		background-image: url(../images/headerBG.png);
+	}
 	.headerTopMenuWrap {
 		padding-top: 25px;
 		padding-bottom: 25px;
@@ -521,6 +523,7 @@ header {
 							background-color:#d9fbf6;
 						}
 						.dropDownMenuSectionsListItemLink {
+							cursor:pointer;
 							font-family: 'Conv_PFBEAUSANSPRO-REG';
 							font-size:15px;
 							color:#000;
@@ -682,6 +685,26 @@ header {
 				a {
 					color:#735bb3;
 					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.aboutBanner {
+		background-image: url(../images/headerAboutBG.png);
+		background-size:cover;
+		background-position:center center;
+		.headerBanner {
+			padding-top: 25px;
+			padding-bottom: 75px;
+			.headerBannerText {
+				.title {
+					margin-bottom: 75px;
+					text-align:center;
+				}
+				.text {
+					text-align:center;
+					font-size:30px;
+					line-height: 36px;
 				}
 			}
 		}
@@ -886,7 +909,7 @@ footer {
 		}
 	}
 }
-.textBlock1 {
+.textBlock {
 	p {
 		color:#1d1d1d;
 		font-family: 'Conv_PFBEAUSANSPRO-REG';
@@ -1794,6 +1817,92 @@ footer {
 					}
 				}
 			}
+		}
+	}
+}
+.ourWorkersBlock {
+	.directorRow {
+		margin-bottom: 60px;
+		.imgBlock {
+			img {}
+		}
+		.textBlock {
+			.name {
+				font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+				color:#7459b3;
+				font-size:20px;
+				line-height: 30px;
+				margin-bottom: 5px;
+			}
+			.position {
+				font-family: 'Conv_PFBEAUSANSPRO-ITALIC';
+				color:#969696;
+				font-size:15px;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+			.description {
+				font-family: 'Conv_PFBEAUSANSPRO-REG';
+				color:#1d1d1d;
+				font-size:15px;
+				line-height: 23px;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.ourWorkersSlider {
+		.owl-stage-outer {
+			z-index:2;
+			.owl-stage {
+				.owl-item {
+					.item {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						.imgBlock {
+							margin-bottom: 15px;
+							img {
+								width:auto;
+							}
+						}
+						.name {
+							font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+							color:#7459b3;
+							font-size:20px;
+							line-height: 20px;
+							margin-bottom: 10px;
+							text-align:center;
+						}
+						.position {
+							font-family: 'Conv_PFBEAUSANSPRO-ITALIC';
+							color:#969696;
+							font-size:15px;
+							line-height: 15px;
+							margin-bottom: 0;
+							text-align:center;
+						}
+					}
+				}
+			}
+		}
+		.owl-nav {
+			z-index: 1;
+			position: absolute;
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			display: block;
+			.owl-prev,.owl-next {
+				position: absolute;
+				top: calc(50% - (87px / 2) - (54px / 2));
+			}
+			.owl-prev {left:-55px;}
+			.owl-next {right:-55px;}
+		}
+		.owl-dots {
+
 		}
 	}
 }

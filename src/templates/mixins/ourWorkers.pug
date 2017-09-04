@@ -1,0 +1,22 @@
+mixin ourWorkersBlock()
+	section.container.ourWorkersBlock
+		.row
+			h2.col-12 наши сотрудники
+		.row.directorRow
+			.col-lg-2.col-md-4.col-sm-6.col-8.mx-auto
+				.imgBlock
+					img.img-fluid(src="/assets/images/mainBannerPhoto.png")
+			.col-lg-10.col-md-12.col-sm-12.col-12.mx-auto
+				.textBlock
+					p.name Махрова Н.В.
+					p.position Генеральный директор ООО «Бухгалтерская компания »Мета»
+					p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna
+		.row
+			.ourWorkersSlider.owl-carousel.col-lg-10.col-md-9.col-sm-10.col-8.mx-auto
+				- for (var i = 0; i < 10; ++i) {
+					.item
+						.imgBlock
+							img(src="/assets/images/ourWorkersSlide.png")
+						p.name Татьяна Петрова
+						p.position Старший специалист отдела юридического консультирования
+				- }

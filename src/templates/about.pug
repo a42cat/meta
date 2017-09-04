@@ -1,0 +1,22 @@
+include mixins/head.pug
+include mixins/header.pug
+include mixins/textBlock2.pug
+include mixins/reviewsSlider.pug
+include mixins/ourWorkers.pug
+include mixins/bottomForm.pug
+include mixins/footer.pug
+include mixins/scripts.pug
+
+doctype 
+html(lang="ru")
+	+head()
+	body
+		+header('about')
+		+textBlock2()
+		+textBlock2('история')
+		+textBlock2('миссия компании')
+		+ourWorkersBlock()
+		+reviewsSliderBlock()
+		+bottomFormBLock()
+		+footer()
+		+scripts()

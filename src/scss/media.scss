@@ -125,6 +125,28 @@
 }
 
 @media (max-width: 767px) {
+	.ourWorkersBlock {
+		.directorRow {
+			.imgBlock {
+				img {}
+				margin-bottom: 15px!important;
+			}
+			.textBlock {
+				.name {
+					margin-bottom: 10px!important;
+					text-align:center;
+				}
+				.position {
+					margin-bottom: 20px!important;
+					text-align:center;
+				}
+				.description {
+					margin-bottom: 30px!important;
+					text-align:center;
+				}
+			}
+		}
+	}
 	.priceAddBlockWrap {
 		.priceAddBlock {
 			.priceAddBlockHead {
@@ -305,16 +327,40 @@
 			}
 		}
 	}
-	.headerBanner {
-		padding-top: 50px!important;
-		padding-bottom: 50px!important;
-		.headerBannerText {
-			.title {
-				font-size: 33px!important;
-				line-height: 40px!important;
+	header {
+		.aboutBanner {
+			background-image:none!important;
+			.headerBanner {
+				.headerBannerText {
+					.title {
+						margin-bottom: 20px!important;
+					}
+					.text {
+						margin-bottom: 0!important;
+						width: calc(100% + 30px);
+						margin: 0px -15px;
+						padding:20px 40px;
+						font-size:20px!important;
+						color:#fff;
+						background: linear-gradient(to right, #40e9d2, #7459b3);
+						a {
+							color:#fff;
+						}
+					}
+				}
 			}
-			.text {
-				margin-bottom: 50px!important;
+		}
+		.headerBanner {
+			padding-top: 50px!important;
+			padding-bottom: 50px!important;
+			.headerBannerText {
+				.title {
+					font-size: 33px!important;
+					line-height: 40px!important;
+				}
+				.text {
+					margin-bottom: 50px!important;
+				}
 			}
 		}
 	}
