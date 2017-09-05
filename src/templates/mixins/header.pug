@@ -261,4 +261,21 @@ mixin header(hb)
 							p.title.text-md-center о компании
 							p.text 326 организаций доверяют ведение налоговой отчетности и бухгалтерии нашим 
 								a сертифицированным специалистам
-					
+		if hb == 'contacts'
+			.row.contactsMainTitle.d-md-none.d-sm-block.d-block
+				h2.col-12 Контакты
+			.row.contactsBanner
+				.container-fluid.mapWrap
+					.row
+						.container
+							.row
+								.col-lg-3.col-md-3.col-sm-10.col-11.m-md-0.m-sm-auto.mx-auto.contactsInfo
+									p.title Адрес:
+									p.text ул. Большая Посадская, д. 16
+									p.title Телефон:
+									p.text +7 (812) 385-58-50
+									p.title E-mail:
+									p.text office@ooometa.ru
+								.d-md-block.d-sm-none.d-none.col-lg-8.col-md-8.col-sm-12.col-12.ml-auto.contactsTitle
+									+breadCrumbsBlock()
+									h2 Контакты

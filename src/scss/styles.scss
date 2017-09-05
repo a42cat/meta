@@ -465,6 +465,7 @@ header {
 					border-top-right-radius: 25px;
 					color:#44e7cf;
 					background-color:#fff;
+					box-shadow: 0px 0px 15px rgba(68, 30, 104, 0.3);
 					&:before {
 						opacity:1;
 					}
@@ -705,6 +706,73 @@ header {
 					text-align:center;
 					font-size:30px;
 					line-height: 36px;
+				}
+			}
+		}
+	}
+	.contactsMainTitle {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		h2 {
+			text-align:center;
+			color:#735bb3;
+			font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+			font-size:30px;
+			line-height: 35px;
+		}
+	}
+	.contactsBanner {
+		.mapWrap {
+			background:url(../images/yaMap.png);
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center center;
+			.contactsInfo {
+				background-color:#fff;
+				padding:200px 30px;
+				box-shadow: 0px 0px 15px rgba(68, 30, 104, 0.3);
+				.title {
+					color:#1d1d1d;
+					font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+					font-size:16px;
+					line-height: 22px;
+					margin-bottom: 15px;
+				}
+				.text {
+					color:#1d1d1d;
+					font-family: 'Conv_PFBEAUSANSPRO-REG';
+					font-size:16px;
+					line-height: 22px;
+					margin-bottom: 30px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.contactsTitle {
+				padding-top: 30px;
+				h2 {
+					color:#735bb3;
+					font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+					font-size:30px;
+					line-height: 35px;
+				}
+				.breadCrumbsBlock {
+					margin-bottom: 25px;
+					.breadCrumbs {
+						justify-content: flex-start;
+						.separator {
+							&:before {
+								color:#fff;
+							}
+						}
+						.breadCrumbsItem {
+							color:#fff;
+							.breadCrumbsItemLink {
+								color:#fff;
+							}
+						}
+					}
 				}
 			}
 		}

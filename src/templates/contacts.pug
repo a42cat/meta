@@ -1,0 +1,14 @@
+include mixins/head.pug
+include mixins/header.pug
+include mixins/bottomForm.pug
+include mixins/footer.pug
+include mixins/scripts.pug
+
+doctype 
+html(lang="ru")
+	+head()
+	body
+		+header('contacts')
+		+bottomFormBLock()
+		+footer()
+		+scripts()

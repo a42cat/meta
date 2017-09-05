@@ -363,6 +363,19 @@
 				}
 			}
 		}
+		.contactsBanner {
+			.mapWrap {
+				padding-top:200px;
+				padding-bottom:200px;
+				.contactsInfo {
+					text-align:center;
+					border-radius:25px;
+					padding:15px!important;
+					position: relative;
+					top: -230px;
+				}
+			}
+		}
 	}
 	footer {
 		.footerWrap {
