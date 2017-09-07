@@ -7,9 +7,11 @@ function initHeaderMenu() {
 	$('#headerDropdownMenuButton').on('click',function() {
 		$(this).parent().toggleClass('show');
 	});
-	$('.headerDropDownMenuItemMainLink').on('click',function() {
-		$(this).toggleClass('active');
+	$('.headerDropDownMenuItemMainLink').on('click',function(e) {
+		if (typeof $(e.target).next()[0] != 'undefined') {
+			$(this).toggleClass('active');
 		$(this).next().toggleClass('show');
+		}
 		$('.headerDropdownMenuInnerItemLink.subCat').removeClass('active').next().removeClass('show');
 	});
 	$('.headerDropdownMenuInnerItemLink.subCat').on('click',function() {
@@ -237,7 +239,8 @@ function initOurWorkersSlider() {
 }
 $(document).ready(function () {
 	console.log('script run...');
-	
+
+	$('input[type="tel"]').mask("+7(999)-999-9999");
 	initHeaderMenu();
 	initAdvantagesSlider();
 	initExpertsSlider();
@@ -246,6 +249,7 @@ $(document).ready(function () {
 	initPriceSlider();
 	initOurWorkersSlider();
 	initNewsInnerPagenSlider();
+
 	console.log('script end.');
 });
 

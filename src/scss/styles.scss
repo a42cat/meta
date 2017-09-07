@@ -756,6 +756,7 @@ header {
 					font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
 					font-size:30px;
 					line-height: 35px;
+					text-transform:uppercase;
 				}
 				.breadCrumbsBlock {
 					margin-bottom: 25px;
@@ -768,6 +769,7 @@ header {
 						}
 						.breadCrumbsItem {
 							color:#fff;
+							display: inline-block;
 							.breadCrumbsItemLink {
 								color:#fff;
 							}
@@ -1486,6 +1488,7 @@ footer {
 				font-size: 16px;
 				line-height: 22px;
 				background-color: transparent;
+				text-align: center;
 				&::placeholder {
 					color: #1d1d1d;
 					text-align:center
