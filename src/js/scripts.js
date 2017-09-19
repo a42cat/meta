@@ -42,11 +42,11 @@ function initAdvantagesSlider() {
 	var advantagesSlider = $('.advantagesSlider');
 	if (typeof advantagesSlider[0] != 'undefined') {
 		function checkMainSlide(e) {
-			if (typeof e != 'undefined') {
+			/*if (typeof e != 'undefined') {
 				$('.advantagesBlock #currentItem').text(e.item.index + 1);
 			}
-			var slideElemCount = advantagesSlider[0].children[0].children[0].childElementCount;
-			$('.advantagesBlock #maxItem').text(slideElemCount);
+			var slideElemCount = advantagesSlider[0].children[0].children[0].childElementCount;*/
+			/*$('.advantagesBlock #maxItem').text(slideElemCount);*/
 			advantagesSlider.find('.owl-item').removeClass('big');
 			advantagesSlider.find('.active:eq(1)').addClass('big');
 		}
@@ -85,6 +85,7 @@ function initExpertsSlider() {
 	expertsSlider.owlCarousel({
 		nav:false,
 		dots: true,
+		loop:true,
 		items:1,
 		navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
 		responsive: {
@@ -161,7 +162,7 @@ function initReviewsSlider() {
 		checkMainSlide();
 		reviewsSlider.on('translated.owl.carousel', function(e) {
 			checkMainSlide(e)
-			reviewsSliderDescription.trigger('to.owl.carousel', e.item.index);
+			reviewsSliderDescription.trigger('to.owl.carousel', e.item.index+2);
 		});
 		reviewsSliderDescription.owlCarousel({
 			dots: false,
@@ -169,7 +170,7 @@ function initReviewsSlider() {
 			loop:true,
 			margin:25,
 			items:1,
-			startPosition:4,
+			startPosition:1,
 			mouseDrag:false,
 			touchDrag:false
 		/*responsive: {
@@ -191,8 +192,8 @@ function initPriceSlider() {
 	if (typeof priceSlide[0] != 'undefined') {
 		function checkMainSlide(e) {
 			var slideElemCount = priceSlide[0].children[0].children[0].childElementCount;
-			priceSlide.find('.owl-item').removeClass('current');
-			priceSlide.find('.active:eq(1)').addClass('current');
+			priceSlide.find('.owl-item').removeClass('current').find('select').prop('disabled',true);
+			priceSlide.find('.active:eq(1)').addClass('current').find('select').prop('disabled',false);;
 		}
 		priceSlide.owlCarousel({
 			nav:true,
