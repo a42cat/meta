@@ -1,3 +1,31 @@
+a {
+	&.disabled {
+		cursor:default!important;
+		text-decoration:none!important;
+		color:#bebebe;
+		&:hover {
+			color:#bebebe!important;
+		}
+	}
+}
+.advancedTextBlock  {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.overlay {
+	&.underKeyForm {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		p {
+			margin: 0;
+			text-align:center;
+			font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+			font-size: 30px;
+			color:#735bb3;
+			line-height: 50px;
+		}
+	}
+}
 section {
 	padding-top: 55px;
 	padding-bottom: 55px;
@@ -685,7 +713,6 @@ header {
 				margin-bottom: 20px;
 				a {
 					color:#735bb3;
-					text-decoration: underline;
 				}
 			}
 		}
@@ -909,11 +936,19 @@ footer {
 }
 .content {
 	.leftColumn {
-		>p {
+		p {
 			color:#1d1d1d;
 			font-family: 'Conv_PFBEAUSANSPRO-REG';
 			font-size:15px;
 			line-height: 23px;
+		}
+		blockquote {
+			color:#1d1d1d;
+			font-family: 'Conv_PFBEAUSANSPRO-SEBOLDITAL';
+			font-size:15px;
+			line-height: 23px;
+			width:70%;
+			margin:auto;
 		}
 		.categoryList {
 			margin-top:55px;
@@ -1247,6 +1282,83 @@ footer {
 				}
 				button {
 					width:100%;
+				}
+			}
+		}
+	}
+}
+.sertificatesSliderBlock {
+	.sertificatesSliderWrap {
+		margin-bottom: 50px;
+		.sertificatesSlider {
+			position: relative;
+			.owl-item {
+				transition:0.2s;
+				.item {
+					p {
+						text-align:center;
+					}
+					img {
+						width:auto;
+						margin: auto;
+					}
+				}
+				&.current {
+					.item {
+						img {
+							
+						}
+					}
+				}
+			}
+			.owl-nav {
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index:-1;
+				.owl-prev,.owl-next {
+					position: absolute;
+					top:-8px;
+				}
+				.owl-prev {
+					left:-60px;
+				}
+				.owl-next {
+					right:-60px;
+				}
+			}
+		}
+	}
+	.sertificatesSliderDescriptionWrap {
+		.sertificatesSliderDescription {
+			.owl-item {
+				.item {
+					.name {
+						font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+						color:#1d1d1d;
+						font-size:20px;
+						line-height: 22px;
+					}
+					.company {
+						font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+						color:#1d1d1d;
+						font-size:20px;
+						line-height: 22px;
+					}
+					.date {
+						font-family: 'Conv_PFBEAUSANSPRO-REG';
+						color:#bebebe;
+						font-size:16px;
+						line-height: 22px;
+					}
+					.text {
+						font-family: 'Conv_PFBEAUSANSPRO-REG';
+						color:#1d1d1d;
+						font-size:15px;
+						line-height: 22px;
+					}
 				}
 			}
 		}
@@ -1639,6 +1751,11 @@ footer {
 		.newsPagenList {
 			.newsPagenListItem {
 				margin:0 10px;
+				&.active {
+					a {
+						cursor:default!important;
+					}
+				}
 				&:hover,&.active {
 					transform: scale(1.4);
 					.newsPagenListItemLink {

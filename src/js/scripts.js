@@ -19,6 +19,24 @@ function initHeaderMenu() {
 		$(this).next().toggleClass('show');
 	});
 }
+function initPriceForm() {
+	$('.priceSlide .item select').on('change', function() {
+		let val = $(this).val();
+		$(this).parent().next('.price').find('.value').text(val);
+	});
+	$('#priceModal').on('shown.bs.modal', function (e) {
+	  let curItem = $(e.relatedTarget).parents('.item');
+	  let priceName = curItem.find('.titleBlock').find('.title').text();
+	  let priceDescr = curItem.find('.titleBlock').find('.descr').text();
+	  let priceType = curItem.find('.activity').find('.value').text();
+	  let priceVal = curItem.find('.price').find('.value').text();
+
+	  $('#priceForm').find('input[name="priceName"]').val(priceName);
+	  $('#priceForm').find('input[name="priceDescr"]').val(priceDescr);
+	  $('#priceForm').find('input[name="priceType"]').val(priceType);
+	  $('#priceForm').find('input[name="priceVal"]').val(priceVal);
+	})
+}
 function initNewsInnerPagenSlider() {
 	var newsInnerPagenSlider = $('.newsInnerPagenSlider');
 	newsInnerPagenSlider.owlCarousel({
@@ -30,10 +48,12 @@ function initNewsInnerPagenSlider() {
 		responsiveClass:true,
 		responsive : {
 			0 : {
-				items:1
+				items:1,
+				nav:false
 			},
 			768 : {
-				items:2
+				items:2,
+				nav:true
 			}
 		}
 	});
@@ -58,19 +78,24 @@ function initAdvantagesSlider() {
 			responsiveClass:true,
 			responsive : {
 				0 : {
-					items:1
+					items:1,
+					nav:false
 				},
 				768 : {
-					items:3
+					items:3,
+					nav:true
 				},
 				992 : {
-					items:3
+					items:3,
+					nav:true
 				},
 				1200 : {
-					items:3
+					items:3,
+					nav:true
 				},
 				1900 : {
-					items:3
+					items:3,
+					nav:true
 				}
 			}
 		});
@@ -90,7 +115,7 @@ function initExpertsSlider() {
 		navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
 		responsive: {
 			0: {
-				nav: true
+				nav: false
 			},
 			768: {
 				nav:false
@@ -110,19 +135,24 @@ function initServicesSliders() {
 		margin:50,
 		responsive : {
 			0 : {
-				items:1
+				items:1,
+				nav:false
 			},
 			768 : {
-				items:3
+				items:3,
+				nav:false
 			},
 			992 : {
-				items:3
+				items:3,
+				nav:true
 			},
 			1200 : {
-				items:3
+				items:3,
+				nav:true
 			},
 			1900 : {
-				items:3
+				items:3,
+				nav:true
 			}
 		}
 	}
@@ -132,6 +162,63 @@ function initServicesSliders() {
 	servicesSlider1.owlCarousel(servicesSlidersOptions);
 	servicesSlider2.owlCarousel(servicesSlidersOptions);
 	servicesSlider3.owlCarousel(servicesSlidersOptions);
+}
+function initSertificatesSlider() {
+	var sertificatesSlider = $('.sertificatesSlider');
+	if (typeof sertificatesSlider[0] != 'undefined') {
+		var sertificatesSliderDescription = $('.sertificatesSliderDescription');
+		/*function checkMainSlide(e) {
+			var slideElemCount = sertificatesSlider[0].children[0].children[0].childElementCount;
+			sertificatesSlider.find('.owl-item').removeClass('current');
+			sertificatesSlider.find('.active:eq(1)').addClass('current');
+		}*/
+		sertificatesSlider.owlCarousel({
+			dots: false,
+			nav:true,
+			navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
+			loop:true,
+			autoplay:true,
+			margin:25,
+			/*autoWidth:true,*/
+			items:3,
+			responsive: {
+				0: {
+					items:1,
+					nav:false
+				},
+				768: {
+					items:3,
+					nav:true
+				}
+			}
+		});
+		/*checkMainSlide();*/
+		/*sertificatesSlider.on('translated.owl.carousel', function(e) {
+			checkMainSlide(e)
+			sertificatesSliderDescription.trigger('to.owl.carousel', e.item.index+2);
+		});*/
+/*		sertificatesSliderDescription.owlCarousel({
+			dots: false,
+			nav:false,
+			loop:true,
+			margin:25,
+			items:1,
+			startPosition:1,
+			mouseDrag:false,
+			touchDrag:false
+		responsive: {
+			0: {
+				startPosition:1
+			},
+			768: {
+				startPosition:4
+			}
+		}
+	});
+		sertificatesSliderDescription.on('translated.owl.carousel', function(e) {
+			console.log(e.item.index);
+		});*/
+	}
 }
 function initReviewsSlider() {
 	var reviewsSlider = $('.reviewsSlider');
@@ -149,20 +236,28 @@ function initReviewsSlider() {
 			loop:true,
 			margin:25,
 			/*autoWidth:true,*/
-			items:4,
+			items:3,
 			responsive: {
 				0: {
-					items:1
+					items:1,
+					nav:false
 				},
 				768: {
-					items:4
+					items:3,
+					nav:true
 				}
 			}
 		});
 		checkMainSlide();
+		reviewsSlider.on('refresh.owl.carousel', function(e) {
+			console.log(e.item.index);
+		});
 		reviewsSlider.on('translated.owl.carousel', function(e) {
-			checkMainSlide(e)
-			reviewsSliderDescription.trigger('to.owl.carousel', e.item.index+2);
+			checkMainSlide(e);
+			/*reviewsSliderDescription.trigger('to.owl.carousel',e.item.index+2);*/
+			console.log('Up:');
+			console.log(e.item.index);
+			console.log(e);
 		});
 		reviewsSliderDescription.owlCarousel({
 			dots: false,
@@ -183,7 +278,9 @@ function initReviewsSlider() {
 		}*/
 	});
 		reviewsSliderDescription.on('translated.owl.carousel', function(e) {
+			console.log('Down:');
 			console.log(e.item.index);
+			console.log(e);
 		});
 	}
 }
@@ -204,10 +301,12 @@ function initPriceSlider() {
 			navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
 			responsive: {
 				0: {
-					items:1
+					items:1,
+					nav:false
 				},
 				768: {
-					items:3
+					items:3,
+					nav:true
 				}
 			}
 		});
@@ -227,13 +326,16 @@ function initOurWorkersSlider() {
 			navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
 			responsive: {
 				0: {
-					items:1
+					items:1,
+					nav:false
 				},
 				768: {
-					items:3
+					items:3,
+					nav:true
 				},
 				992: {
-					items:4
+					items:4,
+					nav:true
 				}
 			}
 		});
@@ -246,11 +348,12 @@ $(document).ready(function () {
 	initAdvantagesSlider();
 	initExpertsSlider();
 	initServicesSliders();
+	initSertificatesSlider();
 	initReviewsSlider();
 	initPriceSlider();
 	initOurWorkersSlider();
 	initNewsInnerPagenSlider();
-
+	initPriceForm();
 	console.log('script end.');
 });
 

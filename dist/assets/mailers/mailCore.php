@@ -1,9 +1,14 @@
 <?php 
 /*print_r($_POST);
 print_r($_FILES);*/
+//$mailto = 'office@ooometa.ru,d.gorelkin@raz-vitie.ru,a.kislicyn@raz-vitie.ru';
 $mailto = 'a.kislicyn@raz-vitie.ru';
 $boundary = "--".md5(uniqid(time()));
-$subject = 'Заявка с сайта '.$_SERVER['HTTP_HOST'].'!';
+if (isset($_POST['formSubject'])) {
+	$subject = $_POST['formSubject'];
+} else {
+	$subject = 'Заявка с сайта '.$_SERVER['HTTP_HOST'].'!';
+}
 $msg = '';
 $headers = "MIME-Version: 1.0;\r\n"; 
 $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n"; 
@@ -11,7 +16,7 @@ $headers .= "From: <no-reply@".$_SERVER['HTTP_HOST'].">\r\n";
 
 
 if (isset($_POST['antiSpam']) && empty($_POST['antiSpam'])) {
-	if (isset($_POST['name']) && isset($_POST['phone'])) {
+	if (isset($_POST['phone']) || isset($_POST['email'])) {
 
 		if (isset($_POST['phone'])) {
 			$phone = trim($_POST['phone']);
@@ -26,6 +31,32 @@ if (isset($_POST['antiSpam']) && empty($_POST['antiSpam'])) {
 		if (isset($_POST['email'])) {
 			$email = trim($_POST['email']);
 			$msg .= 'Почта клиента :'.$email.'<br />';
+		}
+
+		if (isset($_POST['priceName'])) {
+			$priceName = trim($_POST['priceName']);
+			$msg .= '<hr>';
+			$msg .= 'Название тарифа :'.$priceName.'<br />';
+		}
+
+		if (isset($_POST['priceDescr'])) {
+			$priceDescr = trim($_POST['priceDescr']);
+			$msg .= 'Описание тарифа :'.$priceDescr.'<br />';
+		}
+
+		if (isset($_POST['priceType'])) {
+			$priceType = trim($_POST['priceType']);
+			$msg .= 'Тип тарифа :'.$priceType.'<br />';
+		}
+
+		if (isset($_POST['priceVal'])) {
+			$priceVal = trim($_POST['priceVal']);
+			$msg .= 'Цена тарифа :'.$priceVal.'<br />';
+		}
+
+		if (isset($_POST['question'])) {
+			$question = trim($_POST['question']);
+			$msg .= 'Вопрос :'.$question.'<br />';
 		}
 
 		if (isset($_POST['data'])) {

@@ -1,4 +1,4 @@
-input,button {
+input,button,textarea {
 	outline:none!important;
 	text-align:center;
 }
@@ -39,4 +39,55 @@ p {
 			}
 		}
 	}
+}
+.modal {
+	.modal-dialog {
+		.modal-header {
+			border-bottom:0;
+		}
+		.modal-body {
+			input, textarea {
+				text-align:left;
+				width: 100%;
+				border: 0px solid transparent;
+				border-radius: 0px;
+				border-bottom: 2px solid #1d1d1d;
+				padding: 7px 0;
+				color: #1d1d1d;
+				font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
+				font-size: 16px;
+				line-height: 22px;
+				background-color: transparent;
+			}
+			textarea {
+				border: 2px solid #1d1d1d;
+				border-radius:15px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.form-group {
+
+			}
+			textarea {
+				resize:none;
+			}
+			input {
+
+			}
+			button {
+				width:100%;
+			}
+		}
+		.modal-footer {
+			border-top:0;
+		}
+	}
+}
+.sweet-alert {
+	border-radius:25px;
+	box-shadow: 0px 0px 15px rgba(68, 30, 104, 0.3);
+	background-image: url(../images/bottomFormBG.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: -55px -35px;
 }

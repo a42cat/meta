@@ -16,7 +16,34 @@ $('form').submit(function(e) {
 	var msg = $(this).serialize();
 	
 	var form = $(this);
+	var formType = form.attr('data-form');
+	var formSubject = '';
 	var fd = new FormData(this);
+	console.log(formSubject);
+	switch (formType) {
+		case 'questionForm':
+			formSubject = 'Заявка Задать вопрос';
+		break;
+		case 'connectForm':
+			formSubject = 'Заявка Присоедениться';
+		break;
+		case 'priceForm':
+			formSubject = 'Заказ тарифа';
+		break;
+		case 'mainPageFollowForm':
+			formSubject = 'Заявка Сопроваждение под ключ';
+		break;
+		case 'callBackForm':
+			formSubject = 'Заявка Обратная связь';
+		break;
+		case 'newsListForm':
+			formSubject = 'Заявка на бесплатную консультацию';
+		break;
+		default:
+			formSubject = 'Заявка с сайта '+location.hostname;
+		break;
+	}
+	fd.append('formSubject', formSubject);
 	/*if ($(form).find('input[type="file"]').val() != '') {
 		console.log($(form).find('input[type="file"]'));
 		msg += '&userfile='+$(form).find('input[type="file"]').val();
@@ -27,8 +54,7 @@ $('form').submit(function(e) {
 	msgArr.push(msgArrPush);
 	var msgArr = $.makeArray(msgArr);
 	var checkSpam = false;
-	console.log(fd.get('antiSpam'));
-	//console.log(msg);
+	console.log(msg);
 	//console.log(form);
 	//console.log(msgArr);
 	msgArr.forEach(function(item) {
