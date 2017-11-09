@@ -130,7 +130,8 @@ section {
 .breadCrumbsBlock {
 	.breadCrumbs {
 		margin-bottom: 20px;
-		display: flex;
+		-js-display: flex;
+display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
@@ -169,7 +170,8 @@ header {
 		.headerTopMenu {
 			width:100%;
 			margin-bottom: 0;
-			display: flex;
+			-js-display: flex;
+display: flex;
 			justify-content: space-around;
 			.headerTopMenuItem {
 				.headerTopMenuItemLink {
@@ -185,7 +187,8 @@ header {
 		}
 		.headerSubMenu {
 			margin-bottom: 0;
-			display: flex;
+			-js-display: flex;
+display: flex;
 			.headerSubMenuItem {
 				margin-right: 15px;
 				&:nth-last-child(1) {
@@ -227,7 +230,8 @@ header {
 					}
 				}
 				.headerDropdownMenuWrap {
-					display: flex;
+					-js-display: flex;
+display: flex;
 					flex-direction: column;
 					justify-content: space-around;
 					text-align: center;
@@ -260,7 +264,8 @@ header {
 								top: 0;
 								left: 0;
 								margin: 0 50px;
-								display: flex;
+								-js-display: flex;
+display: flex;
 								align-items: center;
 								&:before {
 									display: block;
@@ -283,7 +288,8 @@ header {
 							top: 80px;
 							transition: 0.3s;
 							background-color: #987dd6;
-							display: flex;
+							-js-display: flex;
+display: flex;
 							flex-direction: column;
 							justify-content: space-evenly;
 							&.show {
@@ -306,7 +312,8 @@ header {
 											top: 0;
 											left: 0;
 											margin: 0 50px;
-											display: flex;
+											-js-display: flex;
+display: flex;
 											align-items: center;
 											justify-content: center;
 											background-color: #987dd6;
@@ -333,7 +340,8 @@ header {
 									top: 30px;
 									transition: 0.3s;
 									background-color: #987dd6;
-									display: flex;
+									-js-display: flex;
+display: flex;
 									flex-direction: column;
 									justify-content: space-evenly;
 									&.show {
@@ -434,7 +442,8 @@ header {
 			}
 		}
 		.headerFixedMenuLeft {
-			display: flex;
+			-js-display: flex;
+display: flex;
 			flex-wrap: wrap;
 			.headerFixedMenuLeftItem {
 				width:50%;
@@ -448,7 +457,8 @@ header {
 			}
 		}
 		.headerFixedMenuRight {
-			display: flex;
+			-js-display: flex;
+display: flex;
 			flex-direction: row;
 			flex-wrap:nowrap;
 			height: 45px;
@@ -457,14 +467,21 @@ header {
 				text-align: center;
 				line-height: 15px;
 				height: 100%;
-				display: flex;
+				-js-display: flex;
+display: flex;
 				align-items: center;
 				position: relative;
 				&:first-child {
 					left:-20px;
 					.dropDownMenu {
 						left:0;
+						width:100%;
 					}
+				}
+				&:nth-child(2) {
+					.dropDownMenu {
+						left:0;
+					}	
 				}
 				&:last-child {
 					position: relative;
@@ -486,6 +503,7 @@ header {
 						right:0;
 						flex-direction: row-reverse;
 						border-top-left-radius:25px;
+						left: unset!important;
 					}
 				}
 				&:hover {
@@ -505,6 +523,7 @@ header {
 						border-top-right-radius: 25px;
 					}
 					.dropDownMenu {
+						-js-display: flex;
 						display: flex;
 					}
 				}
@@ -574,24 +593,28 @@ header {
 					padding-right: 20px;
 					padding-left: 20px;
 					height: 100%;
-					display: flex;
+					-js-display: flex;
+display: flex;
 					align-items: center;
 				}
 			}
 		}
 		.headerFixedSubMenu {
-			display: flex;
+			-js-display: flex;
+display: flex;
 			height: 65px;
 			align-items: center;
 			.headerFixedSubMenuItem {
 				margin-left: 15px;
-				display: flex;
+				-js-display: flex;
+display: flex;
 				align-items: center;
 				position:static;
 				height: 65px;
 				&:hover {
 					>.dropDownMenu {
-						display: flex;
+						-js-display: flex;
+display: flex;
 					}
 				}
 				&:first-child {
@@ -895,7 +918,8 @@ footer {
 		}
 		.footerMenuBlock {
 			.footerMenu {
-				display: flex;
+				-js-display: flex;
+display: flex;
 				flex-direction:row;
 				flex-wrap:wrap;
 				width:100%;
@@ -963,7 +987,8 @@ footer {
 					font-size: 15px;
 					line-height: 22px;
 					border-radius: 25px;
-					display: flex;
+					-js-display: flex;
+display: flex;
 					justify-content: center;
 					align-items: center;
 					text-align: center;
@@ -1047,7 +1072,7 @@ footer {
 		.owl-next,.owl-prev {
 			z-index:2;
 			position: absolute;
-			top:115px;
+			top:calc(50% - (87px / 2));
 		}
 		.owl-prev {
 			left:-70px;
@@ -1057,12 +1082,13 @@ footer {
 		}
 	}
 	.owl-stage {
-		display: flex;
+		-js-display: flex;
+display: flex;
 		.active {
 			&.big {
 				.item {
 					img {
-						max-width:100%;
+						width:100%;
 					}
 					.text {
 						opacity:1;
@@ -1077,7 +1103,7 @@ footer {
 				img {
 					margin-bottom: 15px;
 					transition:0.3s;
-					max-width:175px;
+					max-width:225px;
 				}
 				.title {
 					font-size:16px;
@@ -1096,6 +1122,7 @@ footer {
 					color:#1d1d1d;
 					margin-bottom: 0;
 					text-align:center;
+					height:56px;
 				}
 			}
 		}
@@ -1467,7 +1494,8 @@ footer {
 								text-align:center;
 								.titleBlock {
 									background-color:#e6e6e6;
-									display: flex;
+									-js-display: flex;
+display: flex;
 									flex-direction:column;
 									height:60px;
 									justify-content: space-around;
@@ -1678,6 +1706,24 @@ footer {
 			}
 			.imgBlock {
 				position: relative;
+				&:before {
+					content:"";
+					display: block;
+					position: absolute;
+					margin: auto;
+					width: calc(100% - 30px);
+					height:100%;
+					top:0;
+					bottom:0;
+					left:0;
+					right:0;
+					background-image: url('../images/newsItemGradient.png');
+					background-position: left bottom;
+					background-repeat: no-repeat;
+					background-size: cover;
+					border-bottom-left-radius: 16px;
+					border-bottom-right-radius: 16px;
+				}
 				img {}
 				.imgText {
 					position: absolute;
@@ -1793,7 +1839,8 @@ footer {
 			font-family: 'Conv_PFBEAUSANSPRO-SEBOLD';
 			font-size:16px;
 			line-height: 22px;
-			display: flex;
+			-js-display: flex;
+display: flex;
 			align-items: center;
 			margin-bottom: 30px;
 			&:before {
@@ -2044,7 +2091,8 @@ footer {
 			.owl-stage {
 				.owl-item {
 					.item {
-						display: flex;
+						-js-display: flex;
+display: flex;
 						flex-direction: column;
 						justify-content: space-between;
 						align-items: center;

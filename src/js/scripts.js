@@ -226,6 +226,7 @@ function initReviewsSlider() {
 		var reviewsSliderDescription = $('.reviewsSliderDescription');
 		function checkMainSlide(e) {
 			var slideElemCount = reviewsSlider[0].children[0].children[0].childElementCount;
+			
 			reviewsSlider.find('.owl-item').removeClass('current');
 			reviewsSlider.find('.active:eq(1)').addClass('current');
 		}
@@ -249,12 +250,12 @@ function initReviewsSlider() {
 			}
 		});
 		checkMainSlide();
-		reviewsSlider.on('refresh.owl.carousel', function(e) {
+/*		reviewsSlider.on('refresh.owl.carousel', function(e) {
 			console.log(e.item.index);
-		});
+		});*/
 		reviewsSlider.on('translated.owl.carousel', function(e) {
 			checkMainSlide(e);
-			/*reviewsSliderDescription.trigger('to.owl.carousel',e.item.index+2);*/
+			reviewsSliderDescription.trigger('to.owl.carousel',e.item.index-3);
 			console.log('Up:');
 			console.log(e.item.index);
 			console.log(e);

@@ -578,7 +578,7 @@
 			.footerMenuBlock {
 				.footerMenu {
 					.footerMenuItem {
-						width:calc(100% / 3);
+						width:calc(100% / 3 - 1px);
 					}
 				}
 			}

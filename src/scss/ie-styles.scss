@@ -1,0 +1,23 @@
+body.ie {
+	.advantagesSlider .owl-stage .owl-item .item {
+		display: table-cell!important;
+		vertical-align: middle;
+	}
+	.orderWorkFormWrap {
+		form {
+			display:table!important;
+			width:100%;
+			.flex-row {
+				display:table-row!important;
+				width: 100%;
+				.form-group,.form-check {
+					display:table-cell!important;
+					width:50%;
+				}
+			}
+		}
+	}
+	.priceSlideBlockWrap .priceSlideBlock .priceSlideWRap .priceSlide .owl-stage-outer .owl-stage .owl-item {
+		transition:none!important;
+	}
+}
