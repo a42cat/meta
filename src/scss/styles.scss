@@ -844,6 +844,24 @@ footer {
 		left:0;
 		background:linear-gradient(to right, #18e0c2, #725cb3);
 	}
+	.footerCopyright {
+		.copyrightLeft {
+			align-self: center;
+		}
+		.copyrightRight {
+			align-self: center;
+			.raz-vitie {
+				a {
+					color:#000;
+					.raz-text {
+						img {
+
+						}
+					}
+				}
+			}
+		}
+	}
 	.footerWrap {
 		padding:55px 0;
 		.searchBlock {

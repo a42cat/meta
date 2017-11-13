@@ -130,10 +130,9 @@ function initServicesSliders() {
 	var servicesSlidersOptions = {
 		nav:true,
 		navText: ['<img src="assets/images/slideLeft.png">','<img src="assets/images/slideRight.png">'],
-		autowidth:true,
 		dots:true,
 		responsiveClass:true,
-		margin: 10,
+		margin:50,
 		responsive : {
 			0 : {
 				items:1,
@@ -297,7 +296,6 @@ function initPriceSlider() {
 		priceSlide.owlCarousel({
 			nav:true,
 			dots: true,
-			autowidth:true,
 			items:3,
 			loop:true,
 			margin:50,
